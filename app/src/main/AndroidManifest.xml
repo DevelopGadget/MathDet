@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mathdet.mathgadget.com.mathdet">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Inicio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tres"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cuatro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pasos2X2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pasos3x3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Paso1_3x3"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Paso2_3x3" android:screenOrientation="portrait"/>
+        <activity android:name=".Pasos4x4" android:screenOrientation="portrait"/>
+        <activity android:name=".Paso1_4x4" android:screenOrientation="portrait"/>
+        <activity android:name=".Paso2_4x4" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
