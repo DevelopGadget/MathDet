@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e0e0e0"
-    tools:context="mathdet.mathgadget.com.mathdet.Pasos2X2">
+    tools:context="mathdet.mathgadget.com.mathdet.Determinante.Pasos2X2">
 
 
     <TextView
@@ -63,42 +63,47 @@
     <TextView
         android:id="@+id/X3"
         android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/editrojo"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintLeft_toLeftOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/X1" />
+        app:layout_constraintTop_toBottomOf="@+id/X1"
+        app:layout_constraintVertical_bias="0.704" />
 
     <TextView
         android:id="@+id/X4"
         android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/edit"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintRight_toRightOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/X2" />
+        app:layout_constraintTop_toBottomOf="@+id/X2"
+        app:layout_constraintVertical_bias="0.704" />
 
     <TextView
         android:id="@+id/X2"
         android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/editrojo"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintRight_toRightOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -106,12 +111,13 @@
     <TextView
         android:id="@+id/X1"
         android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/edit"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="parent" />

@@ -1,8 +1,10 @@
-package mathdet.mathgadget.com.mathdet;
+package mathdet.mathgadget.com.mathdet.Determinante;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import mathdet.mathgadget.com.mathdet.R;
 
 public class Paso2_3x3 extends AppCompatActivity {
 

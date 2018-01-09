@@ -19,30 +19,58 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Inicio"
+            android:name=".InicioMatriz"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".dos"
+            android:name=".Determinante.dos"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".tres"
+            android:name=".Inversa.dos"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".cuatro"
+            android:name=".Adjunta.dos"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Pasos2X2"
+            android:name=".Determinante.tres"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Pasos3x3"
+            android:name=".Inversa.tres"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Paso1_3x3"
+            android:name=".Adjunta.tres"
             android:screenOrientation="portrait" />
-        <activity android:name=".Paso2_3x3" android:screenOrientation="portrait"/>
-        <activity android:name=".Pasos4x4" android:screenOrientation="portrait"/>
-        <activity android:name=".Paso1_4x4" android:screenOrientation="portrait"/>
-        <activity android:name=".Paso2_4x4" android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Determinante.cuatro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Adjunta.cuatro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Inversa.cuatro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Determinante.Pasos2X2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Determinante.Pasos3x3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Determinante.Paso1_3x3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Determinante.Paso2_3x3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Determinante.Pasos4x4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Determinante.Paso1_4x4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Determinante.Paso2_4x4"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Inicio" />
+        <activity android:name=".Adjunta.Adj_Pasos_2x2"></activity>
     </application>
 
 </manifest>

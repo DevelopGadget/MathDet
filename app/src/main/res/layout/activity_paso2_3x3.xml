@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e0e0e0"
-    tools:context="mathdet.mathgadget.com.mathdet.Paso2_3x3">
+    tools:context="mathdet.mathgadget.com.mathdet.Determinante.Paso2_3x3">
 
     <ImageView
         android:id="@+id/imageView5"

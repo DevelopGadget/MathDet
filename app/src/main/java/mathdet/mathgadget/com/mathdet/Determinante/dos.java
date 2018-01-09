@@ -1,4 +1,4 @@
-package mathdet.mathgadget.com.mathdet;
+package mathdet.mathgadget.com.mathdet.Determinante;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import mathdet.mathgadget.com.mathdet.R;
 
 public class dos extends AppCompatActivity implements View.OnClickListener {
 

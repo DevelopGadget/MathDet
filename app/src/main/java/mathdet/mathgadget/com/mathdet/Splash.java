@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ProgressBar;
 
-import java.util.Timer;
-
 public class Splash extends AppCompatActivity {
 
     private ProgressBar barra;

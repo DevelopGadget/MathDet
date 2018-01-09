@@ -11,24 +11,28 @@ public class Inicio extends AppCompatActivity implements View.OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
-        findViewById(R.id.dos).setOnClickListener(this);
-        findViewById(R.id.tres).setOnClickListener(this);
-        findViewById(R.id.cuatro).setOnClickListener(this);
+        findViewById(R.id.btnAdjunta).setOnClickListener(this);
+        findViewById(R.id.btnDeterminante).setOnClickListener(this);
+        findViewById(R.id.btnInversa).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-        switch(view.getId()){
-            case R.id.dos:
-                Intent dos = new Intent(getApplicationContext(), dos.class);
-                startActivity(dos);
+        Intent i = null;
+        switch (view.getId()){
+            case R.id.btnDeterminante:
+                i = new Intent(getApplicationContext(), InicioMatriz.class);
+                i.putExtra("Opción","determinante");
                 break;
-            case R.id.tres:
-                startActivity(new Intent(getApplicationContext(), tres.class));
+            case R.id.btnAdjunta:
+                i = new Intent(getApplicationContext(), InicioMatriz.class);
+                i.putExtra("Opción","adjunta");
                 break;
-            case R.id.cuatro:
-                startActivity(new Intent(getApplicationContext(), cuatro.class));
+            case R.id.btnInversa:
+                i = new Intent(getApplicationContext(), InicioMatriz.class);
+                i.putExtra("Opción","inversa");
                 break;
         }
+        startActivity(i);
     }
 }

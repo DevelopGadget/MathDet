@@ -2,51 +2,54 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:background="#e0e0e0"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mathdet.mathgadget.com.mathdet.Inicio">
+    android:screenOrientation="portrait"
+    android:orientation="vertical"
+    tools:context="mathdet.mathgadget.com.mathdet.InicioMatriz">
+
     <Button
-        android:id="@+id/btnDeterminante"
+        android:id="@+id/dos"
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/determinante"
-        app:layout_constraintBottom_toTopOf="@+id/btnAdjunta"
+        android:background="@drawable/dos"
+        app:layout_constraintBottom_toTopOf="@+id/tres"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.418" />
 
     <Button
-        android:id="@+id/btnAdjunta"
+        android:id="@+id/tres"
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/adjunta"
+        android:background="@drawable/tres"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnInversa"
+        android:id="@+id/cuatro"
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/inversa"
+        android:background="@drawable/cuatro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAdjunta"
+        app:layout_constraintTop_toBottomOf="@+id/tres"
         app:layout_constraintVertical_bias="0.398" />
 </android.support.constraint.ConstraintLayout>

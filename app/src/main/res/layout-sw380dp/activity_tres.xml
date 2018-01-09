@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e0e0e0"
-    tools:context="mathdet.mathgadget.com.mathdet.tres">
+    tools:context="mathdet.mathgadget.com.mathdet.Determinante.tres">
 
     <TextView
         android:id="@+id/textView"
@@ -86,7 +86,7 @@
         android:layout_marginBottom="41dp"
         android:layout_marginLeft="90dp"
         android:layout_marginRight="0dp"
-        android:background="@drawable/pencil"
+        android:background="@mipmap/lapiz"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -99,7 +99,7 @@
         android:layout_marginBottom="41dp"
         android:layout_marginLeft="33dp"
         android:layout_marginRight="90dp"
-        android:background="@drawable/garbage"
+        android:background="@mipmap/borrador"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toRightOf="@+id/btnResolver"

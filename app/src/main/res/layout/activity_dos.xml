@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#e0e0e0"
     android:orientation="vertical"
-    tools:context="mathdet.mathgadget.com.mathdet.dos"
+    tools:context="mathdet.mathgadget.com.mathdet.Determinante.dos"
     tools:layout_editor_absoluteY="25dp"
     tools:layout_editor_absoluteX="0dp">
 
@@ -14,14 +14,14 @@
         android:id="@+id/btnResolver"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_toStartOf="@+id/textView"
         android:layout_x="103dp"
         android:layout_y="434dp"
-        android:background="@drawable/pencil"
-        tools:layout_editor_absoluteY="410dp"
+        android:background="@mipmap/lapiz"
         tools:layout_editor_absoluteX="97dp"
-        android:layout_marginBottom="15dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/textView" />
+        tools:layout_editor_absoluteY="410dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -43,15 +43,15 @@
         android:id="@+id/btnLimpiar"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_x="206dp"
-        android:layout_y="434dp"
-        android:background="@drawable/garbage"
-        tools:layout_editor_absoluteY="410dp"
-        tools:layout_editor_absoluteX="207dp"
-        android:layout_marginRight="64dp"
         android:layout_alignBottom="@+id/btnResolver"
         android:layout_alignStart="@+id/X1"
-        android:layout_marginBottom="9dp" />
+        android:layout_marginBottom="9dp"
+        android:layout_marginRight="64dp"
+        android:layout_x="206dp"
+        android:layout_y="434dp"
+        android:background="@mipmap/borrador"
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="410dp" />
 
     <ImageView
         android:id="@+id/imageView4"

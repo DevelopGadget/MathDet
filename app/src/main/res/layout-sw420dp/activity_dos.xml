@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#e0e0e0"
     android:orientation="vertical"
-    tools:context="mathdet.mathgadget.com.mathdet.dos"
+    tools:context="mathdet.mathgadget.com.mathdet.Determinante.dos"
     tools:layout_editor_absoluteY="25dp"
     tools:layout_editor_absoluteX="0dp">
 
@@ -152,7 +152,7 @@
         android:layout_marginRight="64dp"
         android:layout_x="383dp"
         android:layout_y="711dp"
-        android:background="@drawable/garbage"
+        android:background="@mipmap/borrador"
         tools:layout_editor_absoluteX="207dp"
         tools:layout_editor_absoluteY="410dp" />
 
@@ -165,7 +165,7 @@
         android:layout_toStartOf="@+id/textView"
         android:layout_x="194dp"
         android:layout_y="712dp"
-        android:background="@drawable/pencil"
+        android:background="@mipmap/lapiz"
         tools:layout_editor_absoluteX="97dp"
         tools:layout_editor_absoluteY="410dp" />
 </android.widget.AbsoluteLayout>
