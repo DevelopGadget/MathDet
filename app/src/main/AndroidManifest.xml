@@ -22,31 +22,13 @@
             android:name=".InicioMatriz"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Determinante.dos"
+            android:name=".dos"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Inversa.dos"
+            android:name=".tres"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Adjunta.dos"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Determinante.tres"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Inversa.tres"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Adjunta.tres"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Determinante.cuatro"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Adjunta.cuatro"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Inversa.cuatro"
+            android:name=".cuatro"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Determinante.Pasos2X2"

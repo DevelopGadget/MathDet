@@ -1,4 +1,4 @@
-package mathdet.mathgadget.com.mathdet.Adjunta;
+package mathdet.mathgadget.com.mathdet;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -7,13 +7,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import mathdet.mathgadget.com.mathdet.Adjunta.Adj_Pasos_2x2;
+import mathdet.mathgadget.com.mathdet.Determinante.Pasos2X2;
 import mathdet.mathgadget.com.mathdet.R;
 
 public class dos extends AppCompatActivity implements View.OnClickListener {
 
     private EditText ex1,ex2,ex3,ex4;
+    public dos(){
 
-
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,12 +70,23 @@ public class dos extends AppCompatActivity implements View.OnClickListener {
             builder.show();
 
         }else {
-            Intent i = new Intent(getApplicationContext(), Adj_Pasos_2x2.class);
+            Intent i = Opcion();
             i.putExtra("X1", Double.parseDouble(ex1.getText().toString()));
             i.putExtra("X2", Double.parseDouble(ex2.getText().toString()));
             i.putExtra("X3", Double.parseDouble(ex3.getText().toString()));
             i.putExtra("X4", Double.parseDouble(ex4.getText().toString()));
             startActivity(i);
+        }
+    }
+    private Intent Opcion(){
+        Bundle o = getIntent().getExtras();
+        switch (o.getInt("Opcion")){
+            case 1:
+                return new Intent(getApplicationContext(), Pasos2X2.class);
+            case 2:
+                return new Intent(getApplicationContext(), Adj_Pasos_2x2.class);
+            default:
+                return new Intent(getApplicationContext(), Adj_Pasos_2x2.class);
         }
     }
 }
