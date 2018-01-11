@@ -28,13 +28,9 @@
         android:layout_width="10dp"
         android:layout_height="280dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toRightOf="@+id/textView"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.497"
         app:srcCompat="@drawable/linea" />
@@ -44,12 +40,9 @@
         android:layout_width="10dp"
         android:layout_height="280dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.964"
-        app:layout_constraintLeft_toRightOf="@+id/imageView3"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.497"
@@ -59,7 +52,6 @@
         android:id="@+id/X28"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="140dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="16dp"
@@ -72,11 +64,9 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/X27"
         app:layout_constraintRight_toLeftOf="@+id/X29"
-        app:layout_constraintTop_toBottomOf="@+id/X24"
-        app:layout_constraintVertical_bias="0.496" />
+        app:layout_constraintTop_toBottomOf="@+id/X24" />
 
     <Button
         android:id="@+id/btnResolver"
@@ -108,8 +98,7 @@
         android:id="@+id/X29"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="140dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/edit"
         android:ems="10"
@@ -119,17 +108,15 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/X25" />
 
     <EditText
         android:id="@+id/X21"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="270dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/edit"
         android:ems="10"
         android:imeOptions="actionNext"
@@ -139,18 +126,15 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/X17"
-        app:layout_constraintVertical_bias="0.425" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/X17" />
 
     <EditText
         android:id="@+id/X18"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="270dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/edit"
         android:ems="10"
         android:imeOptions="actionNext"
@@ -160,18 +144,15 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/X14"
-        app:layout_constraintVertical_bias="0.425" />
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/X14" />
 
     <EditText
         android:id="@+id/X19"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="270dp"
         android:layout_marginRight="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/edit"
         android:ems="10"
         android:imeOptions="actionNext"
@@ -181,21 +162,18 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.307"
         app:layout_constraintLeft_toRightOf="@+id/X18"
         app:layout_constraintRight_toLeftOf="@+id/X21"
-        app:layout_constraintTop_toBottomOf="@+id/X15"
-        app:layout_constraintVertical_bias="0.425" />
+        app:layout_constraintTop_toBottomOf="@+id/X15" />
 
     <EditText
         android:id="@+id/X20"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="270dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/edit"
         android:ems="10"
         android:imeOptions="actionNext"
@@ -205,20 +183,17 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintLeft_toRightOf="@+id/X19"
         app:layout_constraintRight_toLeftOf="@+id/X21"
-        app:layout_constraintTop_toBottomOf="@+id/X16"
-        app:layout_constraintVertical_bias="0.425" />
+        app:layout_constraintTop_toBottomOf="@+id/X16" />
 
     <EditText
         android:id="@+id/X17"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="320dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/edit"
         android:ems="10"
         android:imeOptions="actionNext"
@@ -228,18 +203,15 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <EditText
         android:id="@+id/X14"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="320dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/edit"
         android:ems="10"
         android:imeOptions="actionNext"
@@ -249,18 +221,15 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <EditText
         android:id="@+id/X15"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="320dp"
         android:layout_marginRight="50dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/edit"
         android:ems="10"
         android:imeOptions="actionNext"
@@ -270,20 +239,17 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/X14"
         app:layout_constraintRight_toRightOf="@+id/X16"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <EditText
         android:id="@+id/X16"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="320dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/edit"
         android:ems="10"
         android:imeOptions="actionNext"
@@ -293,19 +259,16 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/X15"
         app:layout_constraintRight_toLeftOf="@+id/X17"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <EditText
         android:id="@+id/X25"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="203dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/edit"
         android:ems="10"
         android:imeOptions="actionNext"
@@ -315,17 +278,15 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/X21" />
 
     <EditText
         android:id="@+id/X22"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="203dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/edit"
         android:ems="10"
         android:imeOptions="actionNext"
@@ -335,17 +296,15 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/X18" />
 
     <EditText
         android:id="@+id/X23"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="203dp"
         android:layout_marginRight="50dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/edit"
         android:ems="10"
         android:imeOptions="actionNext"
@@ -355,7 +314,6 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/X22"
         app:layout_constraintRight_toRightOf="@+id/X24"
         app:layout_constraintTop_toBottomOf="@+id/X19" />
@@ -364,10 +322,9 @@
         android:id="@+id/X24"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="203dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/edit"
         android:ems="10"
         android:imeOptions="actionNext"
@@ -377,7 +334,6 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/X23"
         app:layout_constraintRight_toLeftOf="@+id/X25"
         app:layout_constraintTop_toBottomOf="@+id/X20" />
@@ -386,7 +342,6 @@
         android:id="@+id/X27"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="140dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/edit"
@@ -398,18 +353,15 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/X26"
         app:layout_constraintRight_toRightOf="@+id/X28"
-        app:layout_constraintTop_toBottomOf="@+id/X23"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintTop_toBottomOf="@+id/X23" />
 
     <EditText
         android:id="@+id/X26"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="140dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/edit"
         android:ems="10"
@@ -420,8 +372,6 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/X22"
-        app:layout_constraintVertical_bias="0.496" />
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/X22" />
 </android.support.constraint.ConstraintLayout>

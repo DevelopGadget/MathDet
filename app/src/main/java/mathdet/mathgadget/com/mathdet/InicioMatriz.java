@@ -19,17 +19,20 @@ public class InicioMatriz extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        Bundle i = getIntent().getExtras();
+        Intent i = null;
+        Bundle io = getIntent().getExtras();
         switch(view.getId()){
             case R.id.dos:
-                startActivity(new Intent(getApplicationContext(), dos.class).putExtra("Opcion", i.getInt("Opcion")));
+                i = new Intent(getApplicationContext(), dos.class);
                 break;
             case R.id.tres:
-                startActivity(new Intent(getApplicationContext(), tres.class).putExtra("Opcion", i.getInt("Opcion")));
+                i = new Intent(getApplicationContext(), tres.class);
                 break;
             case R.id.cuatro:
-                startActivity(new Intent(getApplicationContext(), cuatro.class).putExtra("Opcion", i.getInt("Opcion")));
+                i = new Intent(getApplicationContext(), cuatro.class);
                 break;
         }
+        i.putExtra("Opcion", io.getInt("Opc"));
+        startActivity(i);
     }
 }

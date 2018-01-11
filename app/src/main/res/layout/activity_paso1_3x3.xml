@@ -52,6 +52,8 @@
         android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="12"
         android:textAlignment="center"
@@ -59,10 +61,11 @@
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/X12"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintLeft_toRightOf="@+id/X8"
-        app:layout_constraintRight_toLeftOf="@+id/X10"
-        app:layout_constraintTop_toBottomOf="@+id/X6" />
+        app:layout_constraintEnd_toStartOf="@+id/X10"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toEndOf="@+id/X8"
+        app:layout_constraintTop_toBottomOf="@+id/X6"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/X8"

@@ -37,4 +37,10 @@ public class Adj_Pasos_2x2 extends AppCompatActivity {
         X3_1.setText("" + (-1 *i.getDouble("X2")));
         X4_1.setText("" + i.get("X1"));
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,29 +15,34 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_toStartOf="@+id/textView"
         android:layout_x="103dp"
         android:layout_y="434dp"
         android:background="@mipmap/lapiz"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="410dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_x="4dp"
         android:layout_y="229dp"
         android:text="A = "
         android:textColor="@android:color/background_dark"
-        android:textSize="40sp"
-        tools:layout_editor_absoluteY="231dp"
-        tools:layout_editor_absoluteX="16dp"
-        android:layout_marginRight="64dp"
-        android:layout_below="@+id/imageView3"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="24dp" />
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnLimpiar"
@@ -45,13 +50,15 @@
         android:layout_height="70dp"
         android:layout_alignBottom="@+id/btnResolver"
         android:layout_alignStart="@+id/X1"
-        android:layout_marginBottom="9dp"
-        android:layout_marginRight="64dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
         android:layout_x="206dp"
         android:layout_y="434dp"
         android:background="@mipmap/borrador"
-        tools:layout_editor_absoluteX="207dp"
-        tools:layout_editor_absoluteY="410dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -59,18 +66,27 @@
         android:layout_height="250dp"
         android:layout_alignBottom="@+id/X3"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
         android:layout_x="328dp"
         android:layout_y="134dp"
-        app:srcCompat="@drawable/linea"
-        tools:layout_editor_absoluteY="129dp"
-        tools:layout_editor_absoluteX="298dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/linea" />
 
     <EditText
         android:id="@+id/X3"
         style="@style/Base.TextAppearance.AppCompat.Display2"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/X2"
+        android:layout_alignBottom="@+id/X2"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_toStartOf="@+id/imageView3"
         android:layout_x="123dp"
         android:layout_y="275dp"
         android:background="@drawable/edit"
@@ -82,18 +98,19 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteY="277dp"
-        tools:layout_editor_absoluteX="111dp"
-        android:layout_marginRight="64dp"
-        android:layout_alignBaseline="@+id/X2"
-        android:layout_alignBottom="@+id/X2"
-        android:layout_toStartOf="@+id/imageView3" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/X1" />
 
     <EditText
         android:id="@+id/X2"
         style="@style/Base.TextAppearance.AppCompat.Display2"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_above="@+id/X1"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@+id/imageView3"
         android:layout_x="237dp"
         android:layout_y="169dp"
         android:background="@drawable/edit"
@@ -105,30 +122,33 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteY="160dp"
-        tools:layout_editor_absoluteX="207dp"
-        android:layout_marginRight="64dp"
-        android:layout_above="@+id/X1"
-        android:layout_toEndOf="@+id/imageView3"
-        android:layout_marginBottom="11dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="6dp"
         android:layout_height="250dp"
+        android:layout_alignRight="@+id/X4"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_x="95dp"
         android:layout_y="135dp"
-        app:srcCompat="@drawable/linea"
-        tools:layout_editor_absoluteY="129dp"
-        tools:layout_editor_absoluteX="83dp"
-        android:layout_alignRight="@+id/X4"
-        android:layout_marginRight="64dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/linea" />
 
     <EditText
         android:id="@+id/X1"
         style="@style/Base.TextAppearance.AppCompat.Display2"
-        android:layout_width="70dp"
+        android:layout_width="69dp"
         android:layout_height="70dp"
+        android:layout_above="@+id/btnResolver"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_toStartOf="@+id/X2"
         android:layout_x="126dp"
         android:layout_y="169dp"
         android:background="@drawable/edit"
@@ -140,13 +160,8 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteY="160dp"
-        tools:layout_editor_absoluteX="111dp"
-        android:layout_marginRight="64dp"
-        android:layout_marginEnd="19dp"
-        android:layout_above="@+id/btnResolver"
-        android:layout_toStartOf="@+id/X2"
-        android:layout_marginBottom="94dp" />
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <EditText
         android:id="@+id/X4"
@@ -154,7 +169,9 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_below="@+id/textView"
-        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
         android:layout_toStartOf="@+id/imageView4"
         android:layout_x="236dp"
         android:layout_y="278dp"
@@ -166,6 +183,7 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteY="277dp"
-        tools:layout_editor_absoluteX="207dp" />
-</android.widget.AbsoluteLayout>
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/X2" />
+</android.support.constraint.ConstraintLayout>

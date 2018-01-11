@@ -22,15 +22,15 @@ public class Inicio extends AppCompatActivity implements View.OnClickListener{
         switch (view.getId()){
             case R.id.btnDeterminante:
                 i = new Intent(getApplicationContext(), InicioMatriz.class);
-                i.putExtra("Opción","1");
+                i.putExtra("Opc",1);
                 break;
             case R.id.btnAdjunta:
                 i = new Intent(getApplicationContext(), InicioMatriz.class);
-                i.putExtra("Opción","2");
+                i.putExtra("Opc",2);
                 break;
             case R.id.btnInversa:
                 i = new Intent(getApplicationContext(), InicioMatriz.class);
-                i.putExtra("Opción","3");
+                i.putExtra("Opc",3);
                 break;
         }
         startActivity(i);
