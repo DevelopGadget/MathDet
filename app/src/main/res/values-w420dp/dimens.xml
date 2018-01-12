@@ -15,7 +15,15 @@
     <dimen name="Linea_dos">400dp</dimen>
     <dimen name="Linea_tres">440dp</dimen>
     <dimen name="Edit_dos">38sp</dimen>
-    <dimen name="Edit_cuatro">36sp</dimen>
+    <dimen name="Edit_cuatro">32sp</dimen>
     <dimen name="Ancho">280dp</dimen>
+    <dimen name="Ancho_Btn">160dp</dimen>
+    <dimen name="Ancho_Titulo">240dp</dimen>
+    <dimen name="Ancho_3x3">100dp</dimen>
     <dimen name="Alto">230dp</dimen>
+    <dimen name="Alto_Btn">80dp</dimen>
+    <dimen name="Cuadro_2x2">110dp</dimen>
+    <dimen name="Texto_2x2">34sp</dimen>
+    <dimen name="Linea_2x2">180dp</dimen>
+    <dimen name="Linea_3x3">200dp</dimen>
 </resources>
