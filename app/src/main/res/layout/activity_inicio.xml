@@ -6,10 +6,11 @@
     android:background="#e0e0e0"
     android:layout_height="match_parent"
     tools:context="mathdet.mathgadget.com.mathdet.Inicio">
+
     <Button
         android:id="@+id/btnDeterminante"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/Ancho"
+        android:layout_height="@dimen/Alto"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -23,8 +24,8 @@
 
     <Button
         android:id="@+id/btnAdjunta"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/Ancho"
+        android:layout_height="@dimen/Alto"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -37,8 +38,8 @@
 
     <Button
         android:id="@+id/btnInversa"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/Ancho"
+        android:layout_height="@dimen/Alto"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"

@@ -51,8 +51,11 @@
         <activity
             android:name=".Determinante.Paso2_4x4"
             android:screenOrientation="portrait" />
-        <activity android:name=".Inicio" />
-        <activity android:name=".Adjunta.Adj_Pasos_2x2"></activity>
+        <activity android:name=".Inicio"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Adjunta.Adj_Pasos_2x2">
+            android:screenOrientation="portrait"
+        </activity>
     </application>
 
 </manifest>

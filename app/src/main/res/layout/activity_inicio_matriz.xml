@@ -11,8 +11,8 @@
 
     <Button
         android:id="@+id/dos"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/Ancho"
+        android:layout_height="@dimen/Alto"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -26,8 +26,8 @@
 
     <Button
         android:id="@+id/tres"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/Ancho"
+        android:layout_height="@dimen/Alto"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -40,8 +40,8 @@
 
     <Button
         android:id="@+id/cuatro"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/Ancho"
+        android:layout_height="@dimen/Alto"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
