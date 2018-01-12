@@ -21,6 +21,7 @@
     <dimen name="Ancho_Titulo">150dp</dimen>
     <dimen name="Ancho_3x3">60sp</dimen>
     <dimen name="Ancho_Paso1">100dp</dimen>
+    <dimen name="Ancho_Paso3">90dp</dimen>
     <dimen name="Alto">150dp</dimen>
     <dimen name="Alto_Btn">60dp</dimen>
     <dimen name="Cuadro_2x2">50dp</dimen>
