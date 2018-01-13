@@ -21,12 +21,13 @@
     <dimen name="Ancho_Titulo">150dp</dimen>
     <dimen name="Ancho_3x3">60sp</dimen>
     <dimen name="Ancho_Paso1">100dp</dimen>
-    <dimen name="Ancho_Paso3">90dp</dimen>
+    <dimen name="Ancho_Paso3">105dp</dimen>
+    <dimen name="Ancho_4x4">80dp</dimen>
     <dimen name="Alto">150dp</dimen>
     <dimen name="Alto_Btn">60dp</dimen>
     <dimen name="Cuadro_2x2">50dp</dimen>
     <dimen name="Texto_2x2">22sp</dimen>
-    <dimen name="Linea_2x2">140dp</dimen>
+    <dimen name="Linea_2x2">120dp</dimen>
     <dimen name="Linea_3x3">160dp</dimen>
     <dimen name="Linea_Paso1">180dp</dimen>
 </resources>

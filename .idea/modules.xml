@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MathDet.iml" filepath="$PROJECT_DIR$/MathDet.iml" />
       <module fileurl="file://C:\Users\Fernando\AndroidStudioProjects\MathDet\.idea\MathDet.iml" filepath="C:\Users\Fernando\AndroidStudioProjects\MathDet\.idea\MathDet.iml" />
-      <module fileurl="file://D:\Proyectos Android\MathDet\MathDet.iml" filepath="D:\Proyectos Android\MathDet\MathDet.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
