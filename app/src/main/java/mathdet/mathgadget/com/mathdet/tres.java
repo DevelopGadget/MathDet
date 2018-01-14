@@ -9,9 +9,8 @@ import android.view.View;
 import android.widget.EditText;
 
 import mathdet.mathgadget.com.mathdet.Adjunta.Adj_Pasos_2x2;
-import mathdet.mathgadget.com.mathdet.Determinante.Pasos2X2;
+import mathdet.mathgadget.com.mathdet.Adjunta.Adj_Pasos_3x3;
 import mathdet.mathgadget.com.mathdet.Determinante.Pasos3x3;
-import mathdet.mathgadget.com.mathdet.R;
 
 public class tres extends AppCompatActivity implements View.OnClickListener {
 
@@ -124,7 +123,7 @@ public class tres extends AppCompatActivity implements View.OnClickListener {
             case 1:
                 return new Intent(getApplicationContext(), Pasos3x3.class);
             case 2:
-                return new Intent(getApplicationContext(), Adj_Pasos_2x2.class);
+                return new Intent(getApplicationContext(), Adj_Pasos_3x3.class);
             default:
                 return new Intent(getApplicationContext(), Adj_Pasos_2x2.class);
         }

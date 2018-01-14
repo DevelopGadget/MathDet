@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0e0e0"
+    tools:context="mathdet.mathgadget.com.mathdet.Adj_Pasos1_3x3">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Calcular El Determinante De Cada Sub Matriz Y Multiplicar Por El Cofactor"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_4x4"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagesView1dg2"
+        android:layout_width="10dp"
+        android:layout_height="@dimen/Linea_Paso4"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/linea" />
+
+    <ImageView
+        android:id="@+id/imagesView12"
+        android:layout_width="10dp"
+        android:layout_height="@dimen/Linea_Paso4"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/Cofactor1"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/linea" />
+
+    <ImageView
+        android:id="@+id/imagesViedgw12"
+        android:layout_width="10dp"
+        android:layout_height="@dimen/Linea_Paso4"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toEndOf="@+id/Cofactor3"
+        app:layout_constraintTop_toBottomOf="@+id/imagesView1dgssfgs2"
+        app:srcCompat="@drawable/linea" />
+
+    <ImageView
+        android:id="@+id/imagesdfadViedgw12"
+        android:layout_width="10dp"
+        android:layout_height="@dimen/Linea_Paso4"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagesView1dgsgs2"
+        app:srcCompat="@drawable/linea" />
+
+    <ImageView
+        android:id="@+id/imagesView1dgsgs2"
+        android:layout_width="10dp"
+        android:layout_height="@dimen/Linea_Paso4"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagesView1dg2"
+        app:srcCompat="@drawable/linea" />
+
+    <ImageView
+        android:id="@+id/imagesView1dgssfgs2"
+        android:layout_width="10dp"
+        android:layout_height="@dimen/Linea_Paso4"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toEndOf="@+id/Cofactor2"
+        app:layout_constraintTop_toBottomOf="@+id/imagesView12"
+        app:srcCompat="@drawable/linea" />
+
+    <TextView
+        android:id="@+id/Cofactor1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_4x4"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imagesView12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagesView12" />
+
+    <TextView
+        android:id="@+id/X1_1"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="53231.0"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imagesView12"
+        app:layout_constraintTop_toTopOf="@+id/imagesView12" />
+
+    <TextView
+        android:id="@+id/X2_1"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="53231.0"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imagesView1dg2"
+        app:layout_constraintTop_toTopOf="@+id/imagesView1dg2" />
+
+    <TextView
+        android:id="@+id/X3_1"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="53231.0"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imagesView12"
+        app:layout_constraintStart_toEndOf="@+id/imagesView12" />
+
+    <TextView
+        android:id="@+id/X4_1"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="53231.0"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imagesView1dg2"
+        app:layout_constraintEnd_toStartOf="@+id/imagesView1dg2" />
+
+    <TextView
+        android:id="@+id/Cofactor2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_4x4"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imagesView1dgssfgs2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagesView1dgssfgs2" />
+
+    <TextView
+        android:id="@+id/X1_2"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="22222.0"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imagesView1dgssfgs2"
+        app:layout_constraintTop_toTopOf="@+id/imagesView1dgssfgs2" />
+
+    <TextView
+        android:id="@+id/X2_2"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="22222.0"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imagesView1dgsgs2"
+        app:layout_constraintTop_toTopOf="@+id/imagesView1dgsgs2" />
+
+    <TextView
+        android:id="@+id/X3_2"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="22222.0"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imagesView1dgssfgs2"
+        app:layout_constraintStart_toEndOf="@+id/imagesView1dgssfgs2" />
+
+    <TextView
+        android:id="@+id/X4_2"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="22222.0"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imagesView1dgsgs2"
+        app:layout_constraintEnd_toStartOf="@+id/imagesView1dgsgs2" />
+
+    <TextView
+        android:id="@+id/Cofactor3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_4x4"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imagesViedgw12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagesViedgw12" />
+
+    <TextView
+        android:id="@+id/X1_3"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="22222.0"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imagesViedgw12"
+        app:layout_constraintTop_toTopOf="@+id/imagesViedgw12" />
+
+    <TextView
+        android:id="@+id/X2_3"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="22222.0"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imagesdfadViedgw12"
+        app:layout_constraintTop_toTopOf="@+id/imagesdfadViedgw12" />
+
+    <TextView
+        android:id="@+id/X3_3"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="22222.0"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imagesViedgw12"
+        app:layout_constraintStart_toEndOf="@+id/imagesViedgw12" />
+
+    <TextView
+        android:id="@+id/X4_3"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="22222.0"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imagesdfadViedgw12"
+        app:layout_constraintEnd_toStartOf="@+id/imagesdfadViedgw12" />
+
+    <TextView
+        android:id="@+id/Det1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnDet1"
+        app:layout_constraintStart_toEndOf="@+id/imagesView12"
+        app:layout_constraintTop_toBottomOf="@+id/X3_1" />
+
+    <Button
+        android:id="@+id/btnDet1"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit"
+        android:text="Ver"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imagesView1dg2"
+        app:layout_constraintTop_toBottomOf="@+id/X4_1" />
+
+    <TextView
+        android:id="@+id/Det2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnDet2"
+        app:layout_constraintStart_toEndOf="@+id/imagesView1dgssfgs2"
+        app:layout_constraintTop_toBottomOf="@+id/X3_2" />
+
+    <Button
+        android:id="@+id/btnDet2"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit"
+        android:text="Ver"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imagesView1dgsgs2"
+        app:layout_constraintTop_toBottomOf="@+id/X4_2" />
+
+    <TextView
+        android:id="@+id/Det3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnDet3"
+        app:layout_constraintStart_toEndOf="@+id/imagesViedgw12"
+        app:layout_constraintTop_toBottomOf="@+id/X3_3" />
+
+    <Button
+        android:id="@+id/btnDet3"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit"
+        android:text="Ver"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imagesdfadViedgw12"
+        app:layout_constraintTop_toBottomOf="@+id/X4_3" />
+
+</android.support.constraint.ConstraintLayout>
