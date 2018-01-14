@@ -12,18 +12,17 @@
         android:id="@+id/textView3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Escoges Una Fila O Una Columna Y  Los Valores Uno Por Uno Se Multiplican Por (-1) Elevado A La Suma De La Posición Del Valor Esto Quiere Decir Que Si Esta En La (1,1) Seria 1+1, Y Sub Matrices Solo Eliminas La Fila Y Columna De La Posición Y Valores Restantes Es La SubMatriz En Este Sentido Los Cofactores Serian: "
+        android:text="Se Escoge La Fila Y Columna Cualquiera, Se Borran Y La Matriz Restante Es La SubMatriz Cabe Aclar Que Tiene Que Ser Cudrada"
         android:textAlignment="viewStart"
         android:textColor="@android:color/background_dark"
-        android:textSize="14sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imagesView1dg2"
         android:layout_width="10dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_height="@dimen/Linea_Paso4"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:srcCompat="@drawable/linea" />
@@ -31,9 +30,8 @@
     <ImageView
         android:id="@+id/imagesView12"
         android:layout_width="10dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_height="@dimen/Linea_Paso4"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/Cofactor1"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:srcCompat="@drawable/linea" />
@@ -41,9 +39,8 @@
     <ImageView
         android:id="@+id/imagesViedgw12"
         android:layout_width="10dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="26dp"
+        android:layout_height="@dimen/Linea_Paso4"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toEndOf="@+id/Cofactor3"
         app:layout_constraintTop_toBottomOf="@+id/imagesView1dgssfgs2"
         app:srcCompat="@drawable/linea" />
@@ -51,9 +48,8 @@
     <ImageView
         android:id="@+id/imagesdfadViedgw12"
         android:layout_width="10dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="26dp"
+        android:layout_height="@dimen/Linea_Paso4"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagesView1dgsgs2"
         app:srcCompat="@drawable/linea" />
@@ -61,35 +57,26 @@
     <ImageView
         android:id="@+id/imagesdfadVigdedgw12"
         android:layout_width="10dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="55dp"
-        android:layout_marginStart="8dp"
+        android:layout_height="@dimen/Linea_Paso4"
         android:layout_marginTop="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Cofactor4"
         app:layout_constraintTop_toBottomOf="@+id/imagesViedgw12"
-        app:layout_constraintVertical_bias="0.083"
         app:srcCompat="@drawable/linea" />
 
     <ImageView
         android:id="@+id/imagesdfadfdVigdedgw12"
         android:layout_width="10dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="55dp"
-        android:layout_marginEnd="8dp"
+        android:layout_height="@dimen/Linea_Paso4"
         android:layout_marginTop="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagesdfadViedgw12"
-        app:layout_constraintVertical_bias="0.083"
         app:srcCompat="@drawable/linea" />
 
     <ImageView
         android:id="@+id/imagesView1dgsgs2"
         android:layout_width="10dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="26dp"
+        android:layout_height="@dimen/Linea_Paso4"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagesView1dg2"
         app:srcCompat="@drawable/linea" />
@@ -97,22 +84,21 @@
     <ImageView
         android:id="@+id/imagesView1dgssfgs2"
         android:layout_width="10dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="26dp"
+        android:layout_height="@dimen/Linea_Paso4"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toEndOf="@+id/Cofactor2"
         app:layout_constraintTop_toBottomOf="@+id/imagesView12"
         app:srcCompat="@drawable/linea" />
 
     <TextView
         android:id="@+id/Cofactor1"
-        android:layout_width="76dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textColor="@android:color/background_dark"
-        android:textSize="14sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imagesView12"
         app:layout_constraintStart_toStartOf="parent"
@@ -120,24 +106,24 @@
 
     <TextView
         android:id="@+id/X5_1"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="53231.0"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/X8_1"
+        app:layout_constraintStart_toEndOf="@+id/imagesView12"
         app:layout_constraintTop_toTopOf="@+id/imagesView12" />
 
     <TextView
         android:id="@+id/X6_1"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="53231.0"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/X7_1"
         app:layout_constraintStart_toEndOf="@+id/X5_1"
@@ -145,98 +131,102 @@
 
     <TextView
         android:id="@+id/X7_1"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="53231.0"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/X13_1"
+        app:layout_constraintEnd_toStartOf="@+id/imagesView1dg2"
         app:layout_constraintTop_toTopOf="@+id/imagesView1dg2" />
 
     <TextView
         android:id="@+id/X8_1"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="53231.0"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/X11_1"
         app:layout_constraintStart_toEndOf="@+id/imagesView12"
         app:layout_constraintTop_toBottomOf="@+id/X5_1" />
 
     <TextView
         android:id="@+id/X9_1"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="53231.0"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/X12_1"
         app:layout_constraintEnd_toStartOf="@+id/X10_1"
         app:layout_constraintStart_toEndOf="@+id/X8_1"
         app:layout_constraintTop_toBottomOf="@+id/X6_1" />
 
     <TextView
         android:id="@+id/X10_1"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="53231.0"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/X13_1"
         app:layout_constraintEnd_toStartOf="@+id/imagesView1dg2"
         app:layout_constraintTop_toBottomOf="@+id/X7_1" />
 
     <TextView
         android:id="@+id/X11_1"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="53231.0"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/X8_1"
-        app:layout_constraintTop_toBottomOf="@+id/X8_1" />
+        app:layout_constraintBottom_toBottomOf="@+id/imagesView12"
+        app:layout_constraintStart_toEndOf="@+id/imagesView12" />
 
     <TextView
         android:id="@+id/X12_1"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="53231.0"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imagesView1dg2"
         app:layout_constraintEnd_toStartOf="@+id/X13_1"
-        app:layout_constraintStart_toEndOf="@+id/X11_1"
-        app:layout_constraintTop_toBottomOf="@+id/X9_1" />
+        app:layout_constraintStart_toEndOf="@+id/X11_1" />
 
     <TextView
         android:id="@+id/X13_1"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="53231.0"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/imagesView1dg2"
-        app:layout_constraintTop_toBottomOf="@+id/X10_1" />
+        app:layout_constraintBottom_toBottomOf="@+id/imagesView1dg2"
+        app:layout_constraintEnd_toStartOf="@+id/imagesView1dg2" />
 
     <TextView
         android:id="@+id/Cofactor2"
-        android:layout_width="76dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imagesView1dgssfgs2"
         app:layout_constraintStart_toStartOf="parent"
@@ -244,24 +234,24 @@
 
     <TextView
         android:id="@+id/X5_2"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imagesView1dgssfgs2"
         app:layout_constraintTop_toTopOf="@+id/imagesView1dgssfgs2" />
 
     <TextView
         android:id="@+id/X6_2"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/X7_2"
         app:layout_constraintStart_toEndOf="@+id/X5_2"
@@ -269,98 +259,102 @@
 
     <TextView
         android:id="@+id/X7_2"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/imagesView1dgsgs2"
         app:layout_constraintTop_toTopOf="@+id/imagesView1dgsgs2" />
 
     <TextView
         android:id="@+id/X8_2"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/X11_2"
         app:layout_constraintStart_toEndOf="@+id/imagesView1dgssfgs2"
         app:layout_constraintTop_toBottomOf="@+id/X5_2" />
 
     <TextView
         android:id="@+id/X9_2"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/X12_2"
         app:layout_constraintEnd_toStartOf="@+id/X10_2"
         app:layout_constraintStart_toEndOf="@+id/X8_2"
         app:layout_constraintTop_toBottomOf="@+id/X6_2" />
 
     <TextView
         android:id="@+id/X10_2"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/X13_2"
         app:layout_constraintEnd_toStartOf="@+id/imagesView1dgsgs2"
         app:layout_constraintTop_toBottomOf="@+id/X7_2" />
 
     <TextView
         android:id="@+id/X11_2"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imagesView1dgssfgs2"
-        app:layout_constraintTop_toBottomOf="@+id/X8_2" />
+        app:layout_constraintBottom_toBottomOf="@+id/imagesView1dgssfgs2"
+        app:layout_constraintStart_toEndOf="@+id/imagesView1dgssfgs2" />
 
     <TextView
         android:id="@+id/X12_2"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imagesView1dgsgs2"
         app:layout_constraintEnd_toStartOf="@+id/X13_2"
-        app:layout_constraintStart_toEndOf="@+id/X11_2"
-        app:layout_constraintTop_toBottomOf="@+id/X9_2" />
+        app:layout_constraintStart_toEndOf="@+id/X11_2" />
 
     <TextView
         android:id="@+id/X13_2"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/X10_2"
-        app:layout_constraintTop_toBottomOf="@+id/X10_2" />
+        app:layout_constraintBottom_toBottomOf="@+id/imagesView1dgsgs2"
+        app:layout_constraintEnd_toStartOf="@+id/imagesView1dgsgs2" />
 
     <TextView
         android:id="@+id/Cofactor3"
-        android:layout_width="76dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imagesViedgw12"
         app:layout_constraintStart_toStartOf="parent"
@@ -368,24 +362,24 @@
 
     <TextView
         android:id="@+id/X5_3"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/X8_3"
         app:layout_constraintTop_toTopOf="@+id/imagesViedgw12" />
 
     <TextView
         android:id="@+id/X6_3"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/X7_3"
         app:layout_constraintStart_toEndOf="@+id/X5_3"
@@ -393,98 +387,102 @@
 
     <TextView
         android:id="@+id/X7_3"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/imagesdfadViedgw12"
         app:layout_constraintTop_toTopOf="@+id/imagesdfadViedgw12" />
 
     <TextView
         android:id="@+id/X8_3"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/X11_3"
         app:layout_constraintStart_toEndOf="@+id/imagesViedgw12"
         app:layout_constraintTop_toBottomOf="@+id/X5_3" />
 
     <TextView
         android:id="@+id/X9_3"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/X12_3"
         app:layout_constraintEnd_toStartOf="@+id/X10_3"
         app:layout_constraintStart_toEndOf="@+id/X8_3"
         app:layout_constraintTop_toBottomOf="@+id/X6_3" />
 
     <TextView
         android:id="@+id/X10_3"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/X13_3"
         app:layout_constraintEnd_toStartOf="@+id/imagesdfadViedgw12"
         app:layout_constraintTop_toBottomOf="@+id/X7_3" />
 
     <TextView
         android:id="@+id/X11_3"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/X8_3"
-        app:layout_constraintTop_toBottomOf="@+id/X8_3" />
+        app:layout_constraintBottom_toBottomOf="@+id/imagesViedgw12"
+        app:layout_constraintStart_toStartOf="@+id/X8_3" />
 
     <TextView
         android:id="@+id/X12_3"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imagesdfadViedgw12"
         app:layout_constraintEnd_toStartOf="@+id/X13_3"
-        app:layout_constraintStart_toEndOf="@+id/X11_3"
-        app:layout_constraintTop_toBottomOf="@+id/X9_3" />
+        app:layout_constraintStart_toEndOf="@+id/X11_3" />
 
     <TextView
         android:id="@+id/X13_3"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/X7_3"
-        app:layout_constraintTop_toBottomOf="@+id/X10_3" />
+        app:layout_constraintBottom_toBottomOf="@+id/imagesdfadViedgw12"
+        app:layout_constraintEnd_toEndOf="@+id/X7_3" />
 
     <TextView
         android:id="@+id/Cofactor4"
-        android:layout_width="76dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imagesdfadVigdedgw12"
         app:layout_constraintStart_toStartOf="parent"
@@ -492,24 +490,24 @@
 
     <TextView
         android:id="@+id/X5_4"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imagesdfadVigdedgw12"
         app:layout_constraintTop_toTopOf="@+id/imagesdfadVigdedgw12" />
 
     <TextView
         android:id="@+id/X6_4"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/X7_4"
         app:layout_constraintStart_toEndOf="@+id/X5_4"
@@ -517,88 +515,91 @@
 
     <TextView
         android:id="@+id/X7_4"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/X10_4"
         app:layout_constraintTop_toTopOf="@+id/imagesdfadfdVigdedgw12" />
 
     <TextView
         android:id="@+id/X8_4"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/X11_4"
         app:layout_constraintStart_toEndOf="@+id/imagesdfadVigdedgw12"
         app:layout_constraintTop_toBottomOf="@+id/X5_4" />
 
     <TextView
         android:id="@+id/X9_4"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/X12_4"
         app:layout_constraintEnd_toStartOf="@+id/X10_4"
         app:layout_constraintStart_toEndOf="@+id/X8_4"
         app:layout_constraintTop_toBottomOf="@+id/X6_4" />
 
     <TextView
         android:id="@+id/X10_4"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/X13_4"
         app:layout_constraintEnd_toStartOf="@+id/imagesdfadfdVigdedgw12"
         app:layout_constraintTop_toBottomOf="@+id/X7_4" />
 
     <TextView
         android:id="@+id/X11_4"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imagesdfadVigdedgw12"
-        app:layout_constraintTop_toBottomOf="@+id/X8_4" />
+        app:layout_constraintBottom_toBottomOf="@+id/imagesdfadVigdedgw12"
+        app:layout_constraintStart_toEndOf="@+id/imagesdfadVigdedgw12" />
 
     <TextView
         android:id="@+id/X12_4"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imagesdfadfdVigdedgw12"
         app:layout_constraintEnd_toStartOf="@+id/X13_4"
-        app:layout_constraintStart_toEndOf="@+id/X11_4"
-        app:layout_constraintTop_toBottomOf="@+id/X9_4" />
+        app:layout_constraintStart_toEndOf="@+id/X11_4" />
 
     <TextView
         android:id="@+id/X13_4"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="5525"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="@dimen/Texto_2x2"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/imagesdfadfdVigdedgw12"
-        app:layout_constraintTop_toBottomOf="@+id/X10_4" />
+        app:layout_constraintBottom_toBottomOf="@+id/imagesdfadfdVigdedgw12"
+        app:layout_constraintEnd_toStartOf="@+id/imagesdfadfdVigdedgw12" />
 
 </android.support.constraint.ConstraintLayout>

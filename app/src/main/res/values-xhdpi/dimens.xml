@@ -17,6 +17,7 @@
     <dimen name="Edit_cuatro">20sp</dimen>
     <dimen name="Ancho">180dp</dimen>
     <dimen name="Ancho_Btn">100dp</dimen>
+    <dimen name="Ancho_Paso1_4x4">85dp</dimen>
     <dimen name="Ancho_Titulo">140dp</dimen>
     <dimen name="Ancho_Paso1">100dp</dimen>
     <dimen name="Ancho_Paso3">105dp</dimen>
@@ -28,4 +29,5 @@
     <dimen name="Linea_2x2">120dp</dimen>
     <dimen name="Linea_3x3">150dp</dimen>
     <dimen name="Linea_Paso1">160dp</dimen>
+    <dimen name="Linea_Paso4">85dp</dimen>
 </resources>

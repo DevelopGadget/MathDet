@@ -273,7 +273,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="16dp"
-        android:text="Paso 1: Identificar Los Cofactores Y Sus SubMatrices Correspondientes"
+        android:text="Paso 1: Identificar SubMatrices Correspondientes"
         android:textAlignment="textStart"
         android:textColor="@android:color/background_dark"
         android:textSize="@dimen/Texto_2x2"
