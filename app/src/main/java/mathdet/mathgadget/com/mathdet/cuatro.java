@@ -7,11 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-
 import mathdet.mathgadget.com.mathdet.Adjunta.Adj_Pasos_2x2;
-import mathdet.mathgadget.com.mathdet.Determinante.Pasos3x3;
 import mathdet.mathgadget.com.mathdet.Determinante.Pasos4x4;
-import mathdet.mathgadget.com.mathdet.R;
 
 public class cuatro extends AppCompatActivity implements View.OnClickListener {
 
@@ -54,6 +51,7 @@ public class cuatro extends AppCompatActivity implements View.OnClickListener {
                 Limpiar();
                 break;
             case R.id.btnResolver:
+                Resolver();
                 break;
         }
 

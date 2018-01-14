@@ -4,9 +4,6 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
-    <dimen name="Linea">100dp</dimen>
-    <dimen name="Cuadro">30dp</dimen>
-    <dimen name="Texto">18sp</dimen>
     <dimen name="Texto_cuatro">28sp</dimen>
     <dimen name="Cuadro_dos">80dp</dimen>
     <dimen name="Cuadro_tres">70dp</dimen>

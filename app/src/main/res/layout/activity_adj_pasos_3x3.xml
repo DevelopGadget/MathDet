@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#e0e0e0"
+    android:layout_height="match_parent"
+    tools:context="mathdet.mathgadget.com.mathdet.Adjunta.Adj_Pasos_3x3">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="10dp"
+        android:layout_height="@dimen/Linea_3x3"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/linea" />
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/x2"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/x9" />
+
+    <TextView
+        android:id="@+id/x2"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintStart_toEndOf="@+id/imageView14" />
+
+    <TextView
+        android:id="@+id/x3"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/x4"
+        app:layout_constraintStart_toEndOf="@+id/x2" />
+
+    <TextView
+        android:id="@+id/x4"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/x5"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/x3"
+        app:layout_constraintEnd_toStartOf="@+id/x6"
+        app:layout_constraintStart_toEndOf="@+id/x"
+        app:layout_constraintTop_toBottomOf="@+id/x7" />
+
+    <TextView
+        android:id="@+id/x6"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/x4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/x8" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="10dp"
+        android:layout_height="@dimen/Linea_3x3"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/linea" />
+
+    <TextView
+        android:id="@+id/x7"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/x8"
+        app:layout_constraintRight_toLeftOf="@+id/X7"
+        app:layout_constraintStart_toEndOf="@+id/x9"
+        app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+    <TextView
+        android:id="@+id/x8"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/x9"
+        android:layout_width="@dimen/Ancho_Paso1_4x4"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="@dimen/Ancho_Titulo"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Método De Traspuesta De Cofactores"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="10dp"
+        android:layout_height="@dimen/Linea_3x3"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView24"
+        app:layout_constraintLeft_toRightOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/linea" />
+
+    <TextView
+        android:id="@+id/X8"
+        android:layout_width="@dimen/Ancho_3x3"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/X11"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/X5" />
+
+    <TextView
+        android:id="@+id/X11"
+        android:layout_width="@dimen/Ancho_3x3"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/X12"
+        android:layout_width="@dimen/Ancho_3x3"
+        android:layout_height="wrap_content"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintLeft_toRightOf="@+id/X11"
+        app:layout_constraintRight_toLeftOf="@+id/X13" />
+
+    <TextView
+        android:id="@+id/X13"
+        android:layout_width="@dimen/Ancho_3x3"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintEnd_toStartOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/X9"
+        android:layout_width="@dimen/Ancho_3x3"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/X12"
+        app:layout_constraintLeft_toRightOf="@+id/X8"
+        app:layout_constraintRight_toLeftOf="@+id/X10"
+        app:layout_constraintTop_toBottomOf="@+id/X6" />
+
+    <TextView
+        android:id="@+id/X10"
+        android:layout_width="@dimen/Ancho_3x3"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/X13"
+        app:layout_constraintEnd_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/X7" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="10dp"
+        android:layout_height="@dimen/Linea_3x3"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/linea" />
+
+    <TextView
+        android:id="@+id/X6"
+        android:layout_width="@dimen/Ancho_3x3"
+        android:layout_height="wrap_content"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/X5"
+        app:layout_constraintRight_toLeftOf="@+id/X7"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/X7"
+        android:layout_width="@dimen/Ancho_3x3"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/X5"
+        android:layout_width="@dimen/Ancho_3x3"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="1200"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="@dimen/Ancho_Titulo"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Método De Traspuesta De Cofactores"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Paso 1:  Identificar Los Cofactores De La Matriz"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Paso1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <Button
+        android:id="@+id/Paso2"
+        android:layout_width="@dimen/Ancho_Btn"
+        android:layout_height="@dimen/Alto_Btn"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/edit"
+        android:text="Mostrar"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Paso 2: Trasponer La Matriz De Los Cofactores"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/Paso2"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <Button
+        android:id="@+id/Paso1"
+        android:layout_width="@dimen/Ancho_Btn"
+        android:layout_height="@dimen/Alto_Btn"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/edit"
+        android:text="Mostrar"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+</android.support.constraint.ConstraintLayout>

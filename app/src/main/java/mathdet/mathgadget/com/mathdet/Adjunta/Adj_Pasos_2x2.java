@@ -2,7 +2,6 @@ package mathdet.mathgadget.com.mathdet.Adjunta;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 import mathdet.mathgadget.com.mathdet.R;
@@ -14,7 +13,7 @@ public class Adj_Pasos_2x2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adj__pasos_2x2);
+        setContentView(R.layout.activity_adj_pasos_2x2);
         Texto();
     }
 
