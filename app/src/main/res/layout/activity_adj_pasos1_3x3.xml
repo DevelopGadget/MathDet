@@ -5,7 +5,100 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e0e0e0"
-    tools:context="mathdet.mathgadget.com.mathdet.Adj_Pasos1_3x3">
+    tools:context="mathdet.mathgadget.com.mathdet.Adjunta.Adj_Pasos1_3x3">
+
+    <Button
+        android:id="@+id/btnCol3"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="31dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit"
+        android:text="Ver"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/det5"
+        app:layout_constraintStart_toStartOf="@+id/det5"
+        app:layout_constraintTop_toBottomOf="@+id/det5" />
+
+    <TextView
+        android:id="@+id/det5"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="3era Columna"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btnCol1"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="31dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit"
+        android:text="Ver"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/det4"
+        app:layout_constraintStart_toStartOf="@+id/det4"
+        app:layout_constraintTop_toBottomOf="@+id/det4" />
+
+    <TextView
+        android:id="@+id/det3"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text=" 2da Columna"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/det5"
+        app:layout_constraintStart_toEndOf="@+id/det4"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/det4"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="1era Columna"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/Texto_2x2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btnCol2"
+        android:layout_width="@dimen/Ancho_Paso3"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit"
+        android:text="Ver"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/det3"
+        app:layout_constraintStart_toStartOf="@+id/det3"
+        app:layout_constraintTop_toBottomOf="@+id/det3" />
 
     <TextView
         android:id="@+id/textView3"
@@ -25,9 +118,9 @@
         android:layout_width="10dp"
         android:layout_height="@dimen/Linea_Paso4"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol1"
         app:srcCompat="@drawable/linea" />
 
     <ImageView
@@ -35,9 +128,9 @@
         android:layout_width="10dp"
         android:layout_height="@dimen/Linea_Paso4"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toEndOf="@+id/Cofactor1"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/btnCol1"
         app:srcCompat="@drawable/linea" />
 
     <ImageView
@@ -45,7 +138,7 @@
         android:layout_width="10dp"
         android:layout_height="@dimen/Linea_Paso4"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintStart_toEndOf="@+id/Cofactor3"
         app:layout_constraintTop_toBottomOf="@+id/imagesView1dgssfgs2"
         app:srcCompat="@drawable/linea" />
@@ -55,7 +148,7 @@
         android:layout_width="10dp"
         android:layout_height="@dimen/Linea_Paso4"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagesView1dgsgs2"
         app:srcCompat="@drawable/linea" />
@@ -65,7 +158,7 @@
         android:layout_width="10dp"
         android:layout_height="@dimen/Linea_Paso4"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagesView1dg2"
         app:srcCompat="@drawable/linea" />
@@ -75,7 +168,7 @@
         android:layout_width="10dp"
         android:layout_height="@dimen/Linea_Paso4"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintStart_toEndOf="@+id/Cofactor2"
         app:layout_constraintTop_toBottomOf="@+id/imagesView12"
         app:srcCompat="@drawable/linea" />
@@ -311,7 +404,6 @@
         android:layout_width="@dimen/Ancho_Paso3"
         android:layout_height="30dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="16dp"
         android:background="@drawable/edit"
         android:text="Ver"
         android:textAlignment="center"
@@ -319,8 +411,9 @@
         android:textColor="@android:color/background_dark"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Det1"
         app:layout_constraintEnd_toStartOf="@+id/imagesView1dg2"
-        app:layout_constraintTop_toBottomOf="@+id/X4_1" />
+        app:layout_constraintTop_toTopOf="@+id/Det1" />
 
     <TextView
         android:id="@+id/Det2"
@@ -343,15 +436,15 @@
         android:layout_width="@dimen/Ancho_Paso3"
         android:layout_height="30dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="16dp"
         android:background="@drawable/edit"
         android:text="Ver"
         android:textAllCaps="false"
         android:textColor="@android:color/background_dark"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Det2"
         app:layout_constraintEnd_toStartOf="@+id/imagesView1dgsgs2"
-        app:layout_constraintTop_toBottomOf="@+id/X4_2" />
+        app:layout_constraintTop_toTopOf="@+id/Det2" />
 
     <TextView
         android:id="@+id/Det3"
@@ -374,14 +467,14 @@
         android:layout_width="@dimen/Ancho_Paso3"
         android:layout_height="30dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="16dp"
         android:background="@drawable/edit"
         android:text="Ver"
         android:textAllCaps="false"
         android:textColor="@android:color/background_dark"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Det3"
         app:layout_constraintEnd_toStartOf="@+id/imagesdfadViedgw12"
-        app:layout_constraintTop_toBottomOf="@+id/X4_3" />
+        app:layout_constraintTop_toTopOf="@+id/Det3" />
 
 </android.support.constraint.ConstraintLayout>
