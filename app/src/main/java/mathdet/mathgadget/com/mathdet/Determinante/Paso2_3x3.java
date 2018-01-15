@@ -34,12 +34,11 @@ public class Paso2_3x3 extends AppCompatActivity {
         Principal.setText("Principal: " + "( " + vari.getBundle("var").getDouble("x5") + " *" + vari.getBundle("var").getDouble("x9") + " * " + vari.getBundle("var").getDouble("x13") + " )" + " + "
         + "( " + vari.getBundle("var").getDouble("x8") + " *" + vari.getBundle("var").getDouble("x12") + " * " + vari.getBundle("var").getDouble("x7") + " )" + " + "
         + "( " + vari.getBundle("var").getDouble("x11") + " *" + vari.getBundle("var").getDouble("x6") + " * " + vari.getBundle("var").getDouble("x10") + " )");
-        ResulPrinci.setText("= " + vari.getBundle("var").getDouble("Part1"));
+        ResulPrinci.setText("= " + vari.getDouble("Parte1"));
         Secundaria.setText("Secundaria: " + "( " + vari.getBundle("var").getDouble("x7") + " *" + vari.getBundle("var").getDouble("x9") + " * " + vari.getBundle("var").getDouble("x11") + " )" + " + "
                 + "( " + vari.getBundle("var").getDouble("x10") + " *" + vari.getBundle("var").getDouble("x12") + " * " + vari.getBundle("var").getDouble("x5") + " )" + " + "
                 + "( " + vari.getBundle("var").getDouble("x13") + " *" + vari.getBundle("var").getDouble("x6") + " * " + vari.getBundle("var").getDouble("x8") + " )");
-        ResulSecun.setText("= " + vari.getBundle("var").getDouble("Part2"));
-
+        ResulSecun.setText("= " + vari.getDouble("Parte2"));
     }
     private void  Intancias(){
 

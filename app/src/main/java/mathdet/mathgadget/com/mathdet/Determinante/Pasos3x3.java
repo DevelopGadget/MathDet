@@ -10,8 +10,8 @@ import mathdet.mathgadget.com.mathdet.R;
 
 public class Pasos3x3 extends AppCompatActivity implements View.OnClickListener{
 
-    TextView X5,X6,X7,X8,X9,X10,X11,X12,X13,Resul,Determinante;
-    Bundle var;
+    private TextView X5,X6,X7,X8,X9,X10,X11,X12,X13,Resul,Determinante;
+    private Bundle var;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +28,11 @@ public class Pasos3x3 extends AppCompatActivity implements View.OnClickListener{
         X11.setText(String.valueOf(var.getDouble("x11")));
         X12.setText(String.valueOf(var.getDouble("x12")));
         X13.setText(String.valueOf(var.getDouble("x13")));
-        Resul.setText("( " + String.valueOf(var.getDouble("Part1")) + " )" + " - " + "( " + String.valueOf(var.getDouble("Part2")) + " )");
-        Determinante.setText("= "+ var.getDouble("Determinante"));
+        Resul.setText("( " + Parte1() + " )" + " - " + "( " + Parte2() + " )");
+        Determinante.setText("= "+ Determinante());
     }
-    private void  Intancias(){
 
+    private void  Intancias(){
         X5 = (TextView) findViewById(R.id.X5);
         X6 = (TextView) findViewById(R.id.X6);
         X7 = (TextView) findViewById(R.id.X7);
@@ -46,8 +46,21 @@ public class Pasos3x3 extends AppCompatActivity implements View.OnClickListener{
         Determinante = (TextView) findViewById(R.id.Determinante);
         findViewById(R.id.Paso1).setOnClickListener(this);
         findViewById(R.id.Paso2).setOnClickListener(this);
-
     }
+
+    private double Determinante(){
+         return ((var.getDouble("x5") * var.getDouble("x9") * var.getDouble("x13") + var.getDouble("x8") * var.getDouble("x12") * var.getDouble("x7") + var.getDouble("x11") * var.getDouble("x6") * var.getDouble("x10")) -
+                 (var.getDouble("x8") * var.getDouble("x6") * var.getDouble("x13") + var.getDouble("x5") * var.getDouble("x12") * var.getDouble("x10") + var.getDouble("x11") * var.getDouble("x9") * var.getDouble("x7")));
+    }
+
+    private double Parte1(){
+        return (var.getDouble("x5") * var.getDouble("x9") * var.getDouble("x13") + var.getDouble("x8") * var.getDouble("x12") * var.getDouble("x7") + var.getDouble("x11") * var.getDouble("x6") * var.getDouble("x10"));
+    }
+
+    private double Parte2(){
+        return (var.getDouble("x8") * var.getDouble("x6") * var.getDouble("x13") + var.getDouble("x5") * var.getDouble("x12") * var.getDouble("x10") + var.getDouble("x11") * var.getDouble("x9") * var.getDouble("x7"));
+    }
+
     @Override
     public void onBackPressed() {
         super.onBackPressed();
@@ -67,6 +80,8 @@ public class Pasos3x3 extends AppCompatActivity implements View.OnClickListener{
             case R.id.Paso2:
                 inte = new Intent(getApplicationContext(), Paso2_3x3.class);
                 inte.putExtra("var",var);
+                inte.putExtra("Parte1", Parte1());
+                inte.putExtra("Parte2", Parte2());
                 startActivity(inte);
                 break;
         }

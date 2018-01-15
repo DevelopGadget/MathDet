@@ -155,7 +155,8 @@ public class cuatro extends AppCompatActivity implements View.OnClickListener {
 
     private Intent Opcion() {
         Bundle o = getIntent().getExtras();
-        switch (o.getInt("Opcion")) {
+        int i = o.getInt("Opcion");
+        switch (i) {
             case 1:
                 return new Intent(getApplicationContext(), Pasos4x4.class);
             case 2:

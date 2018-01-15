@@ -109,9 +109,6 @@ public class tres extends AppCompatActivity implements View.OnClickListener {
             intent.putExtra("x10", x10);
             intent.putExtra("x11", x11);
             intent.putExtra("x12", x12);
-            intent.putExtra("Determinante", ((x5 * x9 * x13 + x8 * x12 * x7 + x11 * x6 * x10) - (x8 * x6 * x13 + x5 * x12 * x10 + x11 * x9 * x7)));
-            intent.putExtra("Part1", (x5 * x9 * x13 + x8 * x12 * x7 + x11 * x6 * x10));
-            intent.putExtra("Part2", (x8 * x6 * x13 + x5 * x12 * x10 + x11 * x9 * x7));
             startActivity(intent);
         }
 
@@ -119,7 +116,8 @@ public class tres extends AppCompatActivity implements View.OnClickListener {
 
     private Intent Opcion() {
         Bundle o = getIntent().getExtras();
-        switch (o.getInt("Opcion")) {
+        int i = o.getInt("Opcion");
+        switch (i) {
             case 1:
                 return new Intent(getApplicationContext(), Pasos3x3.class);
             case 2:
