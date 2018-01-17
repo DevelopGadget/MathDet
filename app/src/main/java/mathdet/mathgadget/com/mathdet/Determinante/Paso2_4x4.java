@@ -119,10 +119,10 @@ public class Paso2_4x4 extends AppCompatActivity implements View.OnClickListener
         X11_4.setText("" + A.getBundle("var").getDouble("x26"));
         X12_4.setText("" + A.getBundle("var").getDouble("x27"));
         X13_4.setText("" + A.getBundle("var").getDouble("x28"));
-        Det1.setText("= " + A.getBundle("var").getDouble("Det1"));
-        Det2.setText("= " + A.getBundle("var").getDouble("Det2"));
-        Det3.setText("= " + A.getBundle("var").getDouble("Det3"));
-        Det4.setText("= " + A.getBundle("var").getDouble("Det4"));
+        Det1.setText("= " + A.getDouble("Det1"));
+        Det2.setText("= " + A.getDouble("Det2"));
+        Det3.setText("= " + A.getDouble("Det3"));
+        Det4.setText("= " + A.getDouble("Det4"));
     }
     @Override
     public void onBackPressed() {
@@ -160,9 +160,9 @@ public class Paso2_4x4 extends AppCompatActivity implements View.OnClickListener
         i.putExtra("x11", A.getBundle("var").getDouble("x27"));
         i.putExtra("x12", A.getBundle("var").getDouble("x28"));
         i.putExtra("x13", A.getBundle("var").getDouble("x29"));
-        i.putExtra("Determinante", (A.getBundle("var").getDouble("Det1") / A.getBundle("var").getDouble("x14")));
-        i.putExtra("Part1", A.getBundle("var").getDouble("Parte1Det1"));
-        i.putExtra("Part2", A.getBundle("var").getDouble("Parte2Det1"));
+        i.putExtra("Determinante", (A.getDouble("Det1") / A.getBundle("var").getDouble("x14")));
+        i.putExtra("Part1", A.getDouble("Parte1Det1"));
+        i.putExtra("Part2", A.getDouble("Parte2Det1"));
         startActivity(i);
     }
     private void Det2(){
@@ -177,9 +177,9 @@ public class Paso2_4x4 extends AppCompatActivity implements View.OnClickListener
         i.putExtra("x11", A.getBundle("var").getDouble("x26"));
         i.putExtra("x12", A.getBundle("var").getDouble("x28"));
         i.putExtra("x13", A.getBundle("var").getDouble("x29"));
-        i.putExtra("Determinante", (A.getBundle("var").getDouble("Det2") / -A.getBundle("var").getDouble("x15")));
-        i.putExtra("Part1", A.getBundle("var").getDouble("Parte1Det2"));
-        i.putExtra("Part2", A.getBundle("var").getDouble("Parte2Det2"));
+        i.putExtra("Determinante", (A.getDouble("Det2") / -A.getBundle("var").getDouble("x15")));
+        i.putExtra("Part1", A.getDouble("Parte1Det2"));
+        i.putExtra("Part2", A.getDouble("Parte2Det2"));
         startActivity(i);
     }
     private void Det3(){
@@ -194,9 +194,9 @@ public class Paso2_4x4 extends AppCompatActivity implements View.OnClickListener
         i.putExtra("x11", A.getBundle("var").getDouble("x26"));
         i.putExtra("x12", A.getBundle("var").getDouble("x27"));
         i.putExtra("x13", A.getBundle("var").getDouble("x29"));
-        i.putExtra("Determinante", (A.getBundle("var").getDouble("Det3") / A.getBundle("var").getDouble("x16")));
-        i.putExtra("Part1", A.getBundle("var").getDouble("Parte1Det3"));
-        i.putExtra("Part2", A.getBundle("var").getDouble("Parte2Det3"));
+        i.putExtra("Determinante", (A.getDouble("Det3") / A.getBundle("var").getDouble("x16")));
+        i.putExtra("Part1", A.getDouble("Parte1Det3"));
+        i.putExtra("Part2", A.getDouble("Parte2Det3"));
         startActivity(i);
     }
     private void Det4(){
@@ -211,9 +211,9 @@ public class Paso2_4x4 extends AppCompatActivity implements View.OnClickListener
         i.putExtra("x11", A.getBundle("var").getDouble("x26"));
         i.putExtra("x12", A.getBundle("var").getDouble("x27"));
         i.putExtra("x13", A.getBundle("var").getDouble("x28"));
-        i.putExtra("Determinante", (A.getBundle("var").getDouble("Det4") / -A.getBundle("var").getDouble("x17")));
-        i.putExtra("Part1", A.getBundle("var").getDouble("Parte1Det4"));
-        i.putExtra("Part2", A.getBundle("var").getDouble("Parte2Det4"));
+        i.putExtra("Determinante", (A.getDouble("Det4") / -A.getBundle("var").getDouble("x17")));
+        i.putExtra("Part1", A.getDouble("Parte1Det4"));
+        i.putExtra("Part2", A.getDouble("Parte2Det4"));
         startActivity(i);
     }
 }
