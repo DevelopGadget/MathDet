@@ -45,7 +45,6 @@ public class cuatro extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-
         switch (view.getId()) {
             case R.id.btnLimpiar:
                 Limpiar();
@@ -78,7 +77,6 @@ public class cuatro extends AppCompatActivity implements View.OnClickListener {
     }
 
     private void Resolver() {
-
         if (X14.getText().toString() == null || X14.getText().toString().equals("") || X15.getText().toString() == null || X15.getText().toString().equals("")
                 || X16.getText().toString() == null || X16.getText().toString().equals("") || X18.getText().toString() == null || X19.getText().toString().equals("")
                 || X21.getText().toString() == null || X21.getText().toString().equals("") || X20.getText().toString() == null || X20.getText().toString().equals("")
@@ -116,7 +114,6 @@ public class cuatro extends AppCompatActivity implements View.OnClickListener {
             intent.putExtra("x27", Double.parseDouble(X27.getText().toString()));
             startActivity(intent);
         }
-
     }
 
     private Intent Opcion() {

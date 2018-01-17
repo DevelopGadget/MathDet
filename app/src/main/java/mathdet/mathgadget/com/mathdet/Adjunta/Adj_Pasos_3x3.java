@@ -74,7 +74,16 @@ public class Adj_Pasos_3x3 extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.Paso1:
-                startActivity(new Intent(getApplicationContext(), Adj_Pasos1_3x3.class));
+                startActivity(new Intent(getApplicationContext(), Adj_Pasos1_3x3.class)
+                 .putExtra("Col1", new double[]{Double.parseDouble(X5_1.getText().toString()), Double.parseDouble(X6_1.getText().toString()), Double.parseDouble(X7_1.getText().toString()), 1, -1, 1,
+                        Tres.getDouble("x9"), Tres.getDouble("x6"), Tres.getDouble("x6"), Tres.getDouble("x10"), Tres.getDouble("x7"), Tres.getDouble("x7"), Tres.getDouble("x12"),
+                        Tres.getDouble("x12"), Tres.getDouble("x9"), Tres.getDouble("x13"), Tres.getDouble("x13"), Tres.getDouble("x10")})
+                .putExtra("Col2", new double[]{Double.parseDouble(X8_1.getText().toString()), Double.parseDouble(X9_1.getText().toString()), Double.parseDouble(X10_1.getText().toString()), -1, 1, -1,
+                        Tres.getDouble("x8"), Tres.getDouble("x5"), Tres.getDouble("x5"), Tres.getDouble("x10"), Tres.getDouble("x7"), Tres.getDouble("x7"), Tres.getDouble("x11"),
+                        Tres.getDouble("x11"), Tres.getDouble("x8"), Tres.getDouble("x13"), Tres.getDouble("x13"), Tres.getDouble("x10")})
+                .putExtra("Col3", new double[]{Double.parseDouble(X11_1.getText().toString()), Double.parseDouble(X12_1.getText().toString()), Double.parseDouble(X13_1.getText().toString()), 1, -1, 1,
+                        Tres.getDouble("x8"), Tres.getDouble("x5"), Tres.getDouble("x5"), Tres.getDouble("x9"), Tres.getDouble("x6"), Tres.getDouble("x6"), Tres.getDouble("x11"),
+                        Tres.getDouble("x11"), Tres.getDouble("x8"), Tres.getDouble("x12"), Tres.getDouble("x12"), Tres.getDouble("x9")}));
                 break;
             case R.id.Paso2:
                 startActivity(new Intent(getApplicationContext(), Adj_Pasos2_3x3.class));
