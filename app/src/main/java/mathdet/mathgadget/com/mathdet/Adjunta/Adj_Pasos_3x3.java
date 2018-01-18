@@ -86,7 +86,16 @@ public class Adj_Pasos_3x3 extends AppCompatActivity implements View.OnClickList
                         Tres.getDouble("x11"), Tres.getDouble("x8"), Tres.getDouble("x12"), Tres.getDouble("x12"), Tres.getDouble("x9")}));
                 break;
             case R.id.Paso2:
-                startActivity(new Intent(getApplicationContext(), Adj_Pasos2_3x3.class));
+                startActivity(new Intent(getApplicationContext(), Adj_Pasos2_3x3.class)
+                .putExtra("X5", X5_1.getText().toString())
+                .putExtra("X6", X6_1.getText().toString())
+                .putExtra("X7", X7_1.getText().toString())
+                .putExtra("X8", X8_1.getText().toString())
+                .putExtra("X9", X9_1.getText().toString())
+                .putExtra("X10", X10_1.getText().toString())
+                .putExtra("X11", X11_1.getText().toString())
+                .putExtra("X12", X12_1.getText().toString())
+                .putExtra("X13", X13_1.getText().toString()));
                 break;
         }
     }
