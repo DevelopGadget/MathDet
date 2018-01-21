@@ -59,7 +59,8 @@
         </activity>
         <activity android:name=".Adjunta.Adj_Pasos_3x3" />
         <activity android:name=".Adjunta.Adj_Pasos1_3x3" />
-        <activity android:name=".Adjunta.Adj_Pasos2_3x3"></activity>
+        <activity android:name=".Adjunta.Adj_Pasos2_3x3" />
+        <activity android:name=".Adj_Pasos_4x4"></activity>
     </application>
 
 </manifest>
