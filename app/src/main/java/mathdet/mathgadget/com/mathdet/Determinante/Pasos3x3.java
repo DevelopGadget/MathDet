@@ -33,17 +33,17 @@ public class Pasos3x3 extends AppCompatActivity implements View.OnClickListener{
     }
 
     private void  Intancias(){
-        X5 = (TextView) findViewById(R.id.X5);
-        X6 = (TextView) findViewById(R.id.X6);
-        X7 = (TextView) findViewById(R.id.X7);
-        X8 = (TextView) findViewById(R.id.X8);
-        X9 = (TextView) findViewById(R.id.X9);
-        X10 = (TextView) findViewById(R.id.X10);
-        X11 = (TextView) findViewById(R.id.X11);
-        X12 = (TextView) findViewById(R.id.X12);
-        X13 = (TextView) findViewById(R.id.X13);
-        Resul = (TextView) findViewById(R.id.Resul);
-        Determinante = (TextView) findViewById(R.id.Determinante);
+        X5 =  findViewById(R.id.X5);
+        X6 =  findViewById(R.id.X6);
+        X7 =  findViewById(R.id.X7);
+        X8 =  findViewById(R.id.X8);
+        X9 =  findViewById(R.id.X9);
+        X10 =  findViewById(R.id.X10);
+        X11 =  findViewById(R.id.X11);
+        X12 =  findViewById(R.id.X12);
+        X13 =  findViewById(R.id.X13);
+        Resul =  findViewById(R.id.Resul);
+        Determinante =  findViewById(R.id.Determinante);
         findViewById(R.id.Paso1).setOnClickListener(this);
         findViewById(R.id.Paso2).setOnClickListener(this);
     }

@@ -8,7 +8,7 @@ import mathdet.mathgadget.com.mathdet.R;
 
 public class Paso2_3x3 extends AppCompatActivity {
 
-    TextView X5_2,X6_2,X7_2,X8_2,X9_2,X10_2,X5_1,X6_1,X7_1,X8_1,X9_1,X10_1,X11_1,X12_1,X13_1,Principal,Secundaria,ResulPrinci,ResulSecun;
+    private TextView X5_2,X6_2,X7_2,X8_2,X9_2,X10_2,X5_1,X6_1,X7_1,X8_1,X9_1,X10_1,X11_1,X12_1,X13_1,Principal,Secundaria,ResulPrinci,ResulSecun;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,25 +42,25 @@ public class Paso2_3x3 extends AppCompatActivity {
     }
     private void  Intancias(){
 
-        X11_1 = (TextView) findViewById(R.id.X11_1);
-        X12_1 = (TextView) findViewById(R.id.X12_1);
-        X13_1 = (TextView) findViewById(R.id.X13_1);
-        X5_2 = (TextView) findViewById(R.id.X5_2);
-        X5_1 = (TextView) findViewById(R.id.X5_1);
-        X6_2 = (TextView) findViewById(R.id.X6_2);
-        X6_1 = (TextView) findViewById(R.id.X6_1);
-        X7_2 = (TextView) findViewById(R.id.X7_2);
-        X7_1 = (TextView) findViewById(R.id.X7_1);
-        X8_2 = (TextView) findViewById(R.id.X8_2);
-        X8_1 = (TextView) findViewById(R.id.X8_1);
-        X9_2 = (TextView) findViewById(R.id.X9_2);
-        X9_1 = (TextView) findViewById(R.id.X9_1);
-        X10_2 = (TextView) findViewById(R.id.X10_2);
-        X10_1 = (TextView) findViewById(R.id.X10_1);
-        Principal = (TextView) findViewById(R.id.Principal);
-        ResulPrinci = (TextView) findViewById(R.id.ResulPrinci);
-        Secundaria = (TextView) findViewById(R.id.Secundaria);
-        ResulSecun = (TextView) findViewById(R.id.ResulSecun);
+        X11_1 =  findViewById(R.id.X11_1);
+        X12_1 =  findViewById(R.id.X12_1);
+        X13_1 =  findViewById(R.id.X13_1);
+        X5_2 =  findViewById(R.id.X5_2);
+        X5_1 =  findViewById(R.id.X5_1);
+        X6_2 =  findViewById(R.id.X6_2);
+        X6_1 =  findViewById(R.id.X6_1);
+        X7_2 =  findViewById(R.id.X7_2);
+        X7_1 =  findViewById(R.id.X7_1);
+        X8_2 =  findViewById(R.id.X8_2);
+        X8_1 =  findViewById(R.id.X8_1);
+        X9_2 =  findViewById(R.id.X9_2);
+        X9_1 =  findViewById(R.id.X9_1);
+        X10_2 =  findViewById(R.id.X10_2);
+        X10_1 =  findViewById(R.id.X10_1);
+        Principal =  findViewById(R.id.Principal);
+        ResulPrinci =  findViewById(R.id.ResulPrinci);
+        Secundaria =  findViewById(R.id.Secundaria);
+        ResulSecun =  findViewById(R.id.ResulSecun);
 
     }
 

@@ -8,11 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import mathdet.mathgadget.com.mathdet.Adjunta.Adj_Pasos_2x2;
+import mathdet.mathgadget.com.mathdet.Adjunta.Adj_Pasos_4x4;
 import mathdet.mathgadget.com.mathdet.Determinante.Pasos4x4;
 
 public class cuatro extends AppCompatActivity implements View.OnClickListener {
 
-    EditText X14, X15, X16, X17, X18, X19, X20, X21, X22, X23, X24, X25, X26, X27, X28, X29;
+    private EditText X14, X15, X16, X17, X18, X19, X20, X21, X22, X23, X24, X25, X26, X27, X28, X29;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,22 +24,22 @@ public class cuatro extends AppCompatActivity implements View.OnClickListener {
     }
 
     private void Botones() {
-        X14 = (EditText) findViewById(R.id.X14);
-        X15 = (EditText) findViewById(R.id.X15);
-        X16 = (EditText) findViewById(R.id.X16);
-        X17 = (EditText) findViewById(R.id.X17);
-        X18 = (EditText) findViewById(R.id.X18);
-        X19 = (EditText) findViewById(R.id.X19);
-        X20 = (EditText) findViewById(R.id.X20);
-        X21 = (EditText) findViewById(R.id.X21);
-        X22 = (EditText) findViewById(R.id.X22);
-        X23 = (EditText) findViewById(R.id.X23);
-        X24 = (EditText) findViewById(R.id.X24);
-        X25 = (EditText) findViewById(R.id.X25);
-        X26 = (EditText) findViewById(R.id.X26);
-        X27 = (EditText) findViewById(R.id.X27);
-        X28 = (EditText) findViewById(R.id.X28);
-        X29 = (EditText) findViewById(R.id.X29);
+        X14 =  findViewById(R.id.X14);
+        X15 =  findViewById(R.id.X15);
+        X16 =  findViewById(R.id.X16);
+        X17 =  findViewById(R.id.X17);
+        X18 =  findViewById(R.id.X18);
+        X19 =  findViewById(R.id.X19);
+        X20 =  findViewById(R.id.X20);
+        X21 =  findViewById(R.id.X21);
+        X22 =  findViewById(R.id.X22);
+        X23 =  findViewById(R.id.X23);
+        X24 =  findViewById(R.id.X24);
+        X25 =  findViewById(R.id.X25);
+        X26 =  findViewById(R.id.X26);
+        X27 =  findViewById(R.id.X27);
+        X28 =  findViewById(R.id.X28);
+        X29 =  findViewById(R.id.X29);
         findViewById(R.id.btnLimpiar).setOnClickListener(this);
         findViewById(R.id.btnResolver).setOnClickListener(this);
     }
@@ -123,7 +124,7 @@ public class cuatro extends AppCompatActivity implements View.OnClickListener {
             case 1:
                 return new Intent(getApplicationContext(), Pasos4x4.class);
             case 2:
-                return new Intent(getApplicationContext(), Adj_Pasos_2x2.class);
+                return new Intent(getApplicationContext(), Adj_Pasos_4x4.class);
             default:
                 return new Intent(getApplicationContext(), Adj_Pasos_2x2.class);
         }

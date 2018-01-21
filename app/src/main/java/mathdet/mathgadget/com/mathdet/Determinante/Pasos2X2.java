@@ -7,7 +7,8 @@ import android.widget.TextView;
 import mathdet.mathgadget.com.mathdet.R;
 
 public class Pasos2X2 extends AppCompatActivity {
-    TextView X1,X2,X3,X4,Diagonal1,Diagonal2,Resul,fin;
+
+    private TextView X1,X2,X3,X4,Diagonal1,Diagonal2,Resul,fin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

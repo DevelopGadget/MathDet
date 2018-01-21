@@ -1,7 +1,9 @@
-package mathdet.mathgadget.com.mathdet;
+package mathdet.mathgadget.com.mathdet.Adjunta;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import mathdet.mathgadget.com.mathdet.R;
 
 public class Adj_Pasos_4x4 extends AppCompatActivity {
 

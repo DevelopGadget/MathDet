@@ -21,24 +21,24 @@ public class Pasos4x4 extends AppCompatActivity implements View.OnClickListener{
         Asignacion();
     }
     private void Intancias(){
-        X14 = (TextView) findViewById(R.id.X14);
-        X15 = (TextView) findViewById(R.id.X15);
-        X16 = (TextView) findViewById(R.id.X16);
-        X17 = (TextView) findViewById(R.id.X17);
-        X18 = (TextView) findViewById(R.id.X18);
-        X19 = (TextView) findViewById(R.id.X19);
-        X20 = (TextView) findViewById(R.id.X20);
-        X21 = (TextView) findViewById(R.id.X21);
-        X22 = (TextView) findViewById(R.id.X22);
-        X23 = (TextView) findViewById(R.id.X23);
-        X24 = (TextView) findViewById(R.id.X24);
-        X25 = (TextView) findViewById(R.id.X25);
-        X26 = (TextView) findViewById(R.id.X26);
-        X27 = (TextView) findViewById(R.id.X27);
-        X28 = (TextView) findViewById(R.id.X28);
-        X29 = (TextView) findViewById(R.id.X29);
-        Resul = (TextView) findViewById(R.id.Resul);
-        Suma = (TextView) findViewById(R.id.Suma);
+        X14 =  findViewById(R.id.X14);
+        X15 =  findViewById(R.id.X15);
+        X16 =  findViewById(R.id.X16);
+        X17 =  findViewById(R.id.X17);
+        X18 =  findViewById(R.id.X18);
+        X19 =  findViewById(R.id.X19);
+        X20 =  findViewById(R.id.X20);
+        X21 =  findViewById(R.id.X21);
+        X22 =  findViewById(R.id.X22);
+        X23 =  findViewById(R.id.X23);
+        X24 =  findViewById(R.id.X24);
+        X25 =  findViewById(R.id.X25);
+        X26 =  findViewById(R.id.X26);
+        X27 =  findViewById(R.id.X27);
+        X28 =  findViewById(R.id.X28);
+        X29 =  findViewById(R.id.X29);
+        Resul =  findViewById(R.id.Resul);
+        Suma =  findViewById(R.id.Suma);
         findViewById(R.id.Paso1).setOnClickListener(this);
         findViewById(R.id.Paso2).setOnClickListener(this);
     }

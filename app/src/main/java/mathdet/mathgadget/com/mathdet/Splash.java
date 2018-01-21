@@ -9,12 +9,12 @@ import android.widget.ProgressBar;
 public class Splash extends AppCompatActivity {
 
     private ProgressBar barra;
-    private int pro;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        barra = (ProgressBar) findViewById(R.id.progressBar);
+        barra = findViewById(R.id.progressBar);
         new CountDownTimer(3300, 80) {
 
             int progreso = 1; // Variable que va a ir aumentando del progreso
