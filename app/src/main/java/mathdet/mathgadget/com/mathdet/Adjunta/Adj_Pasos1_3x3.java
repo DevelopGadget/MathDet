@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+
 import mathdet.mathgadget.com.mathdet.Determinante.Pasos2X2;
 import mathdet.mathgadget.com.mathdet.R;
 
@@ -14,11 +17,15 @@ public class Adj_Pasos1_3x3 extends AppCompatActivity implements View.OnClickLis
 
     private TextView Cofactor1,Cofactor2,Cofactor3,X1_1,X1_2,X1_3,X2_1,X2_2,X2_3,X3_1,X3_2,X3_3,X4_1,X4_2,X4_3,Det1,Det2,Det3;
     private Bundle Datos;
+    private InterstitialAd mInterstitialAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adj_pasos1_3x3);
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId(R.string.AdMobId_Intertisial+"");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
         Datos = getIntent().getExtras();
         Instancias();
     }
@@ -122,6 +129,9 @@ public class Adj_Pasos1_3x3 extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        }
         finish();
     }
 }

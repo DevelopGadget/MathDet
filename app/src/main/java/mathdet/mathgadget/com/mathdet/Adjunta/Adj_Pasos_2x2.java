@@ -6,6 +6,7 @@ import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 
 import mathdet.mathgadget.com.mathdet.R;
@@ -14,16 +15,19 @@ public class Adj_Pasos_2x2 extends AppCompatActivity {
 
     private TextView X1, X2, X3, X4, X1_1, X2_1, X3_1, X4_1;
     private AdView mAdView;
+    private InterstitialAd mInterstitialAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adj_pasos_2x2);
         mAdView = findViewById(R.id.adView);
-        MobileAds.initialize(this,
-                R.string.AdMobId+"");
+        MobileAds.initialize(this, R.string.AdMobId+"");
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId(R.string.AdMobId_Intertisial+"");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
         Texto();
     }
 
@@ -50,6 +54,9 @@ public class Adj_Pasos_2x2 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        }
         finish();
     }
 }

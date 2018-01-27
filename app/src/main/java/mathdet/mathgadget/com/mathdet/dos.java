@@ -10,6 +10,7 @@ import android.widget.EditText;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 
 import mathdet.mathgadget.com.mathdet.Adjunta.Adj_Pasos_2x2;
@@ -19,16 +20,19 @@ public class dos extends AppCompatActivity implements View.OnClickListener {
 
     private EditText ex1,ex2,ex3,ex4;
     private AdView mAdView;
+    private InterstitialAd mInterstitialAd;
  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dos);
         mAdView = findViewById(R.id.adView);
-        MobileAds.initialize(this,
-                R.string.AdMobId+"");
+        MobileAds.initialize(this, R.string.AdMobId+"");
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId(R.string.AdMobId_Intertisial+"");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
         ex1 =  findViewById(R.id.X1);
         ex2 =  findViewById(R.id.X2);
         ex3 =  findViewById(R.id.X3);
@@ -41,6 +45,9 @@ public class dos extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        }
         finish();
     }
 

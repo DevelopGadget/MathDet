@@ -10,6 +10,7 @@ import android.widget.EditText;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 
 import mathdet.mathgadget.com.mathdet.Adjunta.Adj_Pasos_2x2;
@@ -20,16 +21,19 @@ public class cuatro extends AppCompatActivity implements View.OnClickListener {
 
     private EditText X14, X15, X16, X17, X18, X19, X20, X21, X22, X23, X24, X25, X26, X27, X28, X29;
     private AdView mAdView;
+    private InterstitialAd mInterstitialAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cuatro);
         mAdView = findViewById(R.id.adView);
-        MobileAds.initialize(this,
-                R.string.AdMobId+"");
+        MobileAds.initialize(this, R.string.AdMobId+"");
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId(R.string.AdMobId_Intertisial+"");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
         Botones();
         X14.requestFocus();
     }
@@ -143,7 +147,10 @@ public class cuatro extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        }
         finish();
+        super.onBackPressed();
     }
 }

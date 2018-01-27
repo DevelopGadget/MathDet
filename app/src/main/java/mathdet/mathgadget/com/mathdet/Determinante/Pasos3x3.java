@@ -6,17 +6,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+
 import mathdet.mathgadget.com.mathdet.R;
 
 public class Pasos3x3 extends AppCompatActivity implements View.OnClickListener{
 
     private TextView X5,X6,X7,X8,X9,X10,X11,X12,X13,Resul,Determinante;
     private Bundle var;
+    private InterstitialAd mInterstitialAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pasos3x3);
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId(R.string.AdMobId_Intertisial+"");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
         Intancias();
         var = getIntent().getExtras();
         X5.setText(String.valueOf(var.getDouble("x5")));
@@ -64,6 +71,9 @@ public class Pasos3x3 extends AppCompatActivity implements View.OnClickListener{
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        }
         finish();
     }
 

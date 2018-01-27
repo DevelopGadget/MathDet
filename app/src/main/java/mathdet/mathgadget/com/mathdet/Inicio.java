@@ -7,21 +7,25 @@ import android.view.View;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 
 public class Inicio extends AppCompatActivity implements View.OnClickListener{
 
     private AdView mAdView;
+    private InterstitialAd mInterstitialAd;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
         mAdView = findViewById(R.id.adView);
-        MobileAds.initialize(this,
-                R.string.AdMobId+"");
+        MobileAds.initialize(this, R.string.AdMobId+"");
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId(R.string.AdMobId_Intertisial+"");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
         findViewById(R.id.btnAdjunta).setOnClickListener(this);
         findViewById(R.id.btnDeterminante).setOnClickListener(this);
         findViewById(R.id.btnInversa).setOnClickListener(this);
@@ -45,5 +49,14 @@ public class Inicio extends AppCompatActivity implements View.OnClickListener{
                 break;
         }
         startActivity(i);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        if (mInterstitialAd.isLoaded()) {
+             mInterstitialAd.show();
+        }
+        finish();
     }
 }
