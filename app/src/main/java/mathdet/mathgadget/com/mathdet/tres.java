@@ -8,6 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 import mathdet.mathgadget.com.mathdet.Adjunta.Adj_Pasos_2x2;
 import mathdet.mathgadget.com.mathdet.Adjunta.Adj_Pasos_3x3;
 import mathdet.mathgadget.com.mathdet.Determinante.Pasos3x3;
@@ -15,11 +19,17 @@ import mathdet.mathgadget.com.mathdet.Determinante.Pasos3x3;
 public class tres extends AppCompatActivity implements View.OnClickListener {
 
     private EditText X5, X6, X7, X8, X9, X10, X11, X12, X13;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tres);
+        mAdView = findViewById(R.id.adView);
+        MobileAds.initialize(this,
+                R.string.AdMobId+"");
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         Botones();
         X5.requestFocus();
     }

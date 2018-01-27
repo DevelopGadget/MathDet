@@ -4,6 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 import mathdet.mathgadget.com.mathdet.R;
 
 public class Adj_Pasos2_3x3 extends AppCompatActivity {
@@ -11,11 +15,17 @@ public class Adj_Pasos2_3x3 extends AppCompatActivity {
     private TextView X5,X6,X7,X8,X9,X10,X11,X12,X13;
     private TextView X5_1,X6_1,X7_1,X8_1,X9_1,X10_1,X11_1,X12_1,X13_1;
     private Bundle Datos;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adj_pasos2_3x3);
+        mAdView = findViewById(R.id.adView);
+        MobileAds.initialize(this,
+                R.string.AdMobId+"");
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         Datos = getIntent().getExtras();
         Instancias();
         Texto();

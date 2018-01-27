@@ -49,8 +49,8 @@ public class Pasos3x3 extends AppCompatActivity implements View.OnClickListener{
     }
 
     private double Determinante(){
-         return ((var.getDouble("x5") * var.getDouble("x9") * var.getDouble("x13") + var.getDouble("x8") * var.getDouble("x12") * var.getDouble("x7") + var.getDouble("x11") * var.getDouble("x6") * var.getDouble("x10")) -
-                 (var.getDouble("x8") * var.getDouble("x6") * var.getDouble("x13") + var.getDouble("x5") * var.getDouble("x12") * var.getDouble("x10") + var.getDouble("x11") * var.getDouble("x9") * var.getDouble("x7")));
+        return ((var.getDouble("x5") * var.getDouble("x9") * var.getDouble("x13") + var.getDouble("x8") * var.getDouble("x12") * var.getDouble("x7") + var.getDouble("x11") * var.getDouble("x6") * var.getDouble("x10")) -
+                (var.getDouble("x8") * var.getDouble("x6") * var.getDouble("x13") + var.getDouble("x5") * var.getDouble("x12") * var.getDouble("x10") + var.getDouble("x11") * var.getDouble("x9") * var.getDouble("x7")));
     }
 
     private double Parte1(){

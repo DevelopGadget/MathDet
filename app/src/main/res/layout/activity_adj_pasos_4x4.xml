@@ -26,7 +26,7 @@
         app:srcCompat="@drawable/linea" />
 
     <TextView
-        android:id="@+id/x"
+        android:id="@+id/X28_1"
         android:layout_width="@dimen/Ancho_4x4"
         android:layout_height="wrap_content"
         android:text="12"
@@ -35,11 +35,11 @@
         android:textSize="@dimen/Texto_4x4"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView18"
-        app:layout_constraintEnd_toStartOf="@+id/x8"
-        app:layout_constraintStart_toEndOf="@+id/x7" />
+        app:layout_constraintEnd_toStartOf="@+id/X29_1"
+        app:layout_constraintStart_toEndOf="@+id/X27_1" />
 
     <TextView
-        android:id="@+id/x2"
+        android:id="@+id/X24_1"
         android:layout_width="@dimen/Ancho_4x4"
         android:layout_height="wrap_content"
         android:text="12"
@@ -47,13 +47,13 @@
         android:textColor="@android:color/background_dark"
         android:textSize="@dimen/Texto_4x4"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/x"
-        app:layout_constraintEnd_toStartOf="@+id/x5"
-        app:layout_constraintStart_toEndOf="@+id/x7"
-        app:layout_constraintTop_toBottomOf="@+id/x9" />
+        app:layout_constraintBottom_toTopOf="@+id/X28_1"
+        app:layout_constraintEnd_toStartOf="@+id/X25_1"
+        app:layout_constraintStart_toEndOf="@+id/X27_1"
+        app:layout_constraintTop_toBottomOf="@+id/X20_1" />
 
     <TextView
-        android:id="@+id/x3"
+        android:id="@+id/X22_1"
         android:layout_width="@dimen/Ancho_4x4"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -62,12 +62,12 @@
         android:textColor="@android:color/background_dark"
         android:textSize="@dimen/Texto_4x4"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/x6"
+        app:layout_constraintBottom_toTopOf="@+id/X26_1"
         app:layout_constraintStart_toEndOf="@+id/imageView19"
-        app:layout_constraintTop_toBottomOf="@+id/x10" />
+        app:layout_constraintTop_toBottomOf="@+id/X18_1" />
 
     <TextView
-        android:id="@+id/x4"
+        android:id="@+id/X23_1"
         android:layout_width="@dimen/Ancho_4x4"
         android:layout_height="wrap_content"
         android:text="12"
@@ -75,14 +75,14 @@
         android:textColor="@android:color/background_dark"
         android:textSize="@dimen/Texto_4x4"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/x7"
-        app:layout_constraintEnd_toStartOf="@+id/x2"
+        app:layout_constraintBottom_toTopOf="@+id/X27_1"
+        app:layout_constraintEnd_toStartOf="@+id/X24_1"
         app:layout_constraintLeft_toRightOf="@+id/X22"
-        app:layout_constraintStart_toEndOf="@+id/x3"
-        app:layout_constraintTop_toBottomOf="@+id/x11" />
+        app:layout_constraintStart_toEndOf="@+id/X22_1"
+        app:layout_constraintTop_toBottomOf="@+id/X19_1" />
 
     <TextView
-        android:id="@+id/x5"
+        android:id="@+id/X25_1"
         android:layout_width="@dimen/Ancho_4x4"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -91,12 +91,12 @@
         android:textColor="@android:color/background_dark"
         android:textSize="@dimen/Texto_4x4"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/x8"
+        app:layout_constraintBottom_toTopOf="@+id/X29_1"
         app:layout_constraintEnd_toStartOf="@+id/imageView18"
-        app:layout_constraintTop_toBottomOf="@+id/x12" />
+        app:layout_constraintTop_toBottomOf="@+id/X21_1" />
 
     <TextView
-        android:id="@+id/x6"
+        android:id="@+id/X26_1"
         android:layout_width="@dimen/Ancho_4x4"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -109,7 +109,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageView19" />
 
     <TextView
-        android:id="@+id/x7"
+        android:id="@+id/X27_1"
         android:layout_width="@dimen/Ancho_4x4"
         android:layout_height="wrap_content"
         android:text="12"
@@ -118,12 +118,12 @@
         android:textSize="@dimen/Texto_4x4"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView19"
-        app:layout_constraintEnd_toStartOf="@+id/x"
+        app:layout_constraintEnd_toStartOf="@+id/X28_1"
         app:layout_constraintLeft_toRightOf="@+id/X26"
-        app:layout_constraintStart_toEndOf="@+id/x6" />
+        app:layout_constraintStart_toEndOf="@+id/X26_1" />
 
     <TextView
-        android:id="@+id/x8"
+        android:id="@+id/X29_1"
         android:layout_width="@dimen/Ancho_4x4"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -136,7 +136,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView18" />
 
     <TextView
-        android:id="@+id/x9"
+        android:id="@+id/X20_1"
         android:layout_width="@dimen/Ancho_4x4"
         android:layout_height="wrap_content"
         android:text="12"
@@ -144,13 +144,13 @@
         android:textColor="@android:color/background_dark"
         android:textSize="@dimen/Texto_4x4"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/x2"
-        app:layout_constraintEnd_toStartOf="@+id/x12"
-        app:layout_constraintStart_toEndOf="@+id/x4"
-        app:layout_constraintTop_toBottomOf="@+id/x13" />
+        app:layout_constraintBottom_toTopOf="@+id/X24_1"
+        app:layout_constraintEnd_toStartOf="@+id/X21_1"
+        app:layout_constraintStart_toEndOf="@+id/X23_1"
+        app:layout_constraintTop_toBottomOf="@+id/X16_1" />
 
     <TextView
-        android:id="@+id/x10"
+        android:id="@+id/X18_1"
         android:layout_width="@dimen/Ancho_4x4"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -159,13 +159,13 @@
         android:textColor="@android:color/background_dark"
         android:textSize="@dimen/Texto_4x4"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/x3"
+        app:layout_constraintBottom_toTopOf="@+id/X22_1"
         app:layout_constraintLeft_toLeftOf="@+id/imageView13"
         app:layout_constraintStart_toEndOf="@+id/imageView19"
-        app:layout_constraintTop_toBottomOf="@+id/x14" />
+        app:layout_constraintTop_toBottomOf="@+id/X14_1" />
 
     <TextView
-        android:id="@+id/x11"
+        android:id="@+id/X19_1"
         android:layout_width="@dimen/Ancho_4x4"
         android:layout_height="wrap_content"
         android:text="12"
@@ -173,14 +173,14 @@
         android:textColor="@android:color/background_dark"
         android:textSize="@dimen/Texto_4x4"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/x4"
-        app:layout_constraintEnd_toStartOf="@+id/x9"
+        app:layout_constraintBottom_toTopOf="@+id/X22_1"
+        app:layout_constraintEnd_toStartOf="@+id/X20_1"
         app:layout_constraintLeft_toRightOf="@+id/X18"
-        app:layout_constraintStart_toEndOf="@+id/x10"
-        app:layout_constraintTop_toBottomOf="@+id/x15" />
+        app:layout_constraintStart_toEndOf="@+id/X18_1"
+        app:layout_constraintTop_toBottomOf="@+id/X15_1" />
 
     <TextView
-        android:id="@+id/x12"
+        android:id="@+id/X21_1"
         android:layout_width="@dimen/Ancho_4x4"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -189,12 +189,12 @@
         android:textColor="@android:color/background_dark"
         android:textSize="@dimen/Texto_4x4"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/x5"
+        app:layout_constraintBottom_toTopOf="@+id/X25_1"
         app:layout_constraintEnd_toStartOf="@+id/imageView18"
-        app:layout_constraintTop_toBottomOf="@+id/x16" />
+        app:layout_constraintTop_toBottomOf="@+id/X17_1" />
 
     <TextView
-        android:id="@+id/x13"
+        android:id="@+id/X16_1"
         android:layout_width="@dimen/Ancho_4x4"
         android:layout_height="wrap_content"
         android:text="12"
@@ -202,12 +202,12 @@
         android:textColor="@android:color/background_dark"
         android:textSize="@dimen/Texto_4x4"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/x16"
-        app:layout_constraintStart_toEndOf="@+id/x11"
+        app:layout_constraintEnd_toStartOf="@+id/X17_1"
+        app:layout_constraintStart_toEndOf="@+id/X19_1"
         app:layout_constraintTop_toTopOf="@+id/imageView18" />
 
     <TextView
-        android:id="@+id/x14"
+        android:id="@+id/X14_1"
         android:layout_width="@dimen/Ancho_4x4"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -220,7 +220,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView19" />
 
     <TextView
-        android:id="@+id/x15"
+        android:id="@+id/X15_1"
         android:layout_width="@dimen/Ancho_4x4"
         android:layout_height="wrap_content"
         android:text="12"
@@ -228,13 +228,13 @@
         android:textColor="@android:color/background_dark"
         android:textSize="@dimen/Texto_4x4"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/x13"
+        app:layout_constraintEnd_toStartOf="@+id/X16_1"
         app:layout_constraintLeft_toRightOf="@+id/X14"
-        app:layout_constraintStart_toEndOf="@+id/x14"
+        app:layout_constraintStart_toEndOf="@+id/X14_1"
         app:layout_constraintTop_toTopOf="@+id/imageView19" />
 
     <TextView
-        android:id="@+id/x16"
+        android:id="@+id/X17_1"
         android:layout_width="@dimen/Ancho_4x4"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
