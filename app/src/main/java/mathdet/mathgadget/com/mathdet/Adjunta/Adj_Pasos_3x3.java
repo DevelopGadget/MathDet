@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
@@ -31,6 +32,12 @@ public class Adj_Pasos_3x3 extends AppCompatActivity implements View.OnClickList
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId(R.string.AdMobId_Intertisial+"");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                mInterstitialAd.show();
+            }
+        });
         findViewById(R.id.Paso1).setOnClickListener(this);
         findViewById(R.id.Paso2).setOnClickListener(this);
         Instancias();

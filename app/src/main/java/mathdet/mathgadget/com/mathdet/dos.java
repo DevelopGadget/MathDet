@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
@@ -33,6 +34,18 @@ public class dos extends AppCompatActivity implements View.OnClickListener {
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId(R.string.AdMobId_Intertisial+"");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                mInterstitialAd.show();
+            }
+        });
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                mInterstitialAd.show();
+            }
+        });
         ex1 =  findViewById(R.id.X1);
         ex2 =  findViewById(R.id.X2);
         ex3 =  findViewById(R.id.X3);
@@ -45,9 +58,6 @@ public class dos extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        if (mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        }
         finish();
     }
 

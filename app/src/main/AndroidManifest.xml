@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="mathdet.mathgadget.com.mathdet">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -60,10 +60,22 @@
         <activity android:name=".Adjunta.Adj_Pasos_2x2">
             android:screenOrientation="portrait"
         </activity>
-        <activity android:name=".Adjunta.Adj_Pasos_3x3" />
-        <activity android:name=".Adjunta.Adj_Pasos1_3x3" />
-        <activity android:name=".Adjunta.Adj_Pasos2_3x3" />
-        <activity android:name=".Adjunta.Adj_Pasos_4x4"></activity>
+        <activity
+            android:name=".Adjunta.Adj_Pasos_3x3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Adjunta.Adj_Pasos1_3x3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Adjunta.Adj_Pasos2_3x3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Adjunta.Adj_Pasos_4x4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Adjunta.Adj_Paso1_4x4"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Adjunta.Adj_Paso2_4x4"></activity>
     </application>
 
 </manifest>

@@ -4,8 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 
 import mathdet.mathgadget.com.mathdet.R;
 
@@ -23,9 +25,16 @@ public class Paso1_4x4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_paso1_4x4);
+        MobileAds.initialize(this, R.string.AdMobId+"");
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId(R.string.AdMobId_Intertisial+"");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                mInterstitialAd.show();
+            }
+        });
         Intancias();
         Texto();
     }
@@ -73,7 +82,6 @@ public class Paso1_4x4 extends AppCompatActivity {
     }
 
     private void Texto(){
-
         A = getIntent().getExtras();
         Cofactor1.setText("(1) (" + A.getBundle("var").getDouble("x14") + " )");
         Cofactor2.setText("(-1) (" + A.getBundle("var").getDouble("x15") + " )");
@@ -120,9 +128,6 @@ public class Paso1_4x4 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        if (mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        }
         finish();
     }
 }

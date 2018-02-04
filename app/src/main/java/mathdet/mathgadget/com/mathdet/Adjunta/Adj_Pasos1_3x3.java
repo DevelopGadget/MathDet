@@ -7,8 +7,10 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 
 import mathdet.mathgadget.com.mathdet.Determinante.Pasos2X2;
 import mathdet.mathgadget.com.mathdet.R;
@@ -23,9 +25,16 @@ public class Adj_Pasos1_3x3 extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adj_pasos1_3x3);
+        MobileAds.initialize(this, R.string.AdMobId+"");
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId(R.string.AdMobId_Intertisial+"");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                mInterstitialAd.show();
+            }
+        });
         Datos = getIntent().getExtras();
         Instancias();
     }
@@ -129,9 +138,6 @@ public class Adj_Pasos1_3x3 extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        if (mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        }
         finish();
     }
 }
